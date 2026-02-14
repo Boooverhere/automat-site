@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { Check, Zap, Code, Settings, Shield, Mail, Menu, X } from 'lucide-react';
+import { Check, Zap, Code, Settings, Shield, Mail, Menu, X, ArrowRight, CheckCircle2 } from 'lucide-react';
 
 export default function Home() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -22,6 +22,7 @@ export default function Home() {
             {/* Desktop Navigation */}
             <div className="hidden md:flex items-center space-x-8">
               <a href="#services" className="text-slate-300 hover:text-white transition-colors">Services</a>
+              <a href="#process" className="text-slate-300 hover:text-white transition-colors">Process</a>
               <a href="#pricing" className="text-slate-300 hover:text-white transition-colors">Pricing</a>
               <a href="#contact" className="px-6 py-2.5 bg-indigo-600 hover:bg-indigo-700 rounded-lg font-medium transition-colors">
                 Contact
@@ -42,6 +43,7 @@ export default function Home() {
             <div className="md:hidden mt-4 py-4 border-t border-slate-800">
               <div className="flex flex-col space-y-4">
                 <a href="#services" className="text-slate-300 hover:text-white transition-colors">Services</a>
+                <a href="#process" className="text-slate-300 hover:text-white transition-colors">Process</a>
                 <a href="#pricing" className="text-slate-300 hover:text-white transition-colors">Pricing</a>
                 <a href="#contact" className="px-6 py-2.5 bg-indigo-600 hover:bg-indigo-700 rounded-lg font-medium transition-colors text-center">
                   Contact
@@ -137,135 +139,225 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Pricing Section */}
-      <section id="pricing" className="py-20 px-6">
+      {/* Our Process Section */}
+      <section id="process" className="py-20 px-6">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">Maintenance Plans</h2>
-            <p className="text-xl text-slate-400">Choose the support tier that fits your needs</p>
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">Our Process</h2>
+            <p className="text-xl text-slate-400">A proven approach to delivering custom automation solutions</p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-12 max-w-5xl mx-auto">
+            {/* Step 1 */}
+            <div className="relative">
+              <div className="flex flex-col items-center text-center">
+                <div className="w-16 h-16 bg-gradient-to-br from-indigo-500 to-indigo-600 rounded-full flex items-center justify-center mb-6 text-2xl font-bold shadow-lg shadow-indigo-500/50">
+                  1
+                </div>
+                <h3 className="text-2xl font-bold mb-4">Consultation</h3>
+                <p className="text-slate-400 leading-relaxed">
+                  We analyze your existing workflows, API infrastructure, and automation requirements to design a tailored solution that fits your specific business needs.
+                </p>
+              </div>
+              {/* Connector Arrow */}
+              <div className="hidden md:flex absolute top-8 left-full w-full items-center justify-center -z-10">
+                <ArrowRight className="w-8 h-8 text-indigo-500/30" />
+              </div>
+            </div>
+
+            {/* Step 2 */}
+            <div className="relative">
+              <div className="flex flex-col items-center text-center">
+                <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-purple-600 rounded-full flex items-center justify-center mb-6 text-2xl font-bold shadow-lg shadow-purple-500/50">
+                  2
+                </div>
+                <h3 className="text-2xl font-bold mb-4">Custom Engineering</h3>
+                <p className="text-slate-400 leading-relaxed">
+                  Our team develops proprietary Python scripts, custom API integrations, and n8n workflows built exclusively for your environment—no off-the-shelf solutions.
+                </p>
+              </div>
+              {/* Connector Arrow */}
+              <div className="hidden md:flex absolute top-8 left-full w-full items-center justify-center -z-10">
+                <ArrowRight className="w-8 h-8 text-purple-500/30" />
+              </div>
+            </div>
+
+            {/* Step 3 */}
+            <div className="flex flex-col items-center text-center">
+              <div className="w-16 h-16 bg-gradient-to-br from-cyan-500 to-cyan-600 rounded-full flex items-center justify-center mb-6 text-2xl font-bold shadow-lg shadow-cyan-500/50">
+                3
+              </div>
+              <h3 className="text-2xl font-bold mb-4">Deployment & Support</h3>
+              <p className="text-slate-400 leading-relaxed">
+                We deploy directly to your environment, provide comprehensive documentation, and deliver ongoing maintenance and support to keep everything running smoothly.
+              </p>
+            </div>
+          </div>
+
+          {/* Process Note */}
+          <div className="mt-16 p-6 bg-indigo-500/5 border border-indigo-500/20 rounded-xl max-w-3xl mx-auto">
+            <p className="text-slate-300 text-center leading-relaxed">
+              <strong className="text-indigo-300">Our subscriptions cover professional services and ongoing support</strong> — not pre-packaged software licenses. Every solution is custom-engineered for your unique requirements.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Pricing Section */}
+      <section id="pricing" className="py-20 px-6 bg-slate-900/30">
+        <div className="container mx-auto max-w-6xl">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">Service Tiers</h2>
+            <p className="text-xl text-slate-400">Professional automation services tailored to your needs</p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {/* Starter Plan */}
-            <div className="p-8 bg-slate-800/30 border border-slate-700/50 rounded-2xl hover:border-slate-600 transition-all">
+            {/* Tier 1: Entry */}
+            <div className="p-8 bg-slate-800/30 border border-slate-700/50 rounded-2xl hover:border-slate-600 transition-all flex flex-col">
               <div className="mb-6">
-                <h3 className="text-xl font-bold mb-2">Starter</h3>
-                <div className="flex items-baseline gap-1">
-                  <span className="text-4xl font-bold">$14</span>
-                  <span className="text-slate-400">/month</span>
+                <h3 className="text-xl font-bold mb-2">Entry</h3>
+                <div className="flex items-baseline gap-1 mb-1">
+                  <span className="text-4xl font-bold">$14.99</span>
+                  <span className="text-slate-400 text-sm">– $17.99</span>
                 </div>
+                <p className="text-indigo-400 text-sm font-semibold">Logic & Script Audits</p>
               </div>
+              <p className="text-slate-400 leading-relaxed mb-6">
+                One-time review of automation settings or single-script health checks.
+              </p>
               <ul className="space-y-3 mb-8">
                 <li className="flex items-start gap-3">
-                  <Check className="w-5 h-5 text-indigo-400 flex-shrink-0 mt-0.5" />
-                  <span className="text-slate-300">1 Month of technical support</span>
+                  <CheckCircle2 className="w-5 h-5 text-indigo-400 flex-shrink-0 mt-0.5" />
+                  <span className="text-slate-300">Automation settings review</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <Check className="w-5 h-5 text-indigo-400 flex-shrink-0 mt-0.5" />
-                  <span className="text-slate-300">System monitoring</span>
+                  <CheckCircle2 className="w-5 h-5 text-indigo-400 flex-shrink-0 mt-0.5" />
+                  <span className="text-slate-300">Single-script health check</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <Check className="w-5 h-5 text-indigo-400 flex-shrink-0 mt-0.5" />
-                  <span className="text-slate-300">Email support</span>
+                  <CheckCircle2 className="w-5 h-5 text-indigo-400 flex-shrink-0 mt-0.5" />
+                  <span className="text-slate-300">Detailed audit report</span>
                 </li>
               </ul>
+              <div className="flex-grow"></div>
               <a href="#contact" className="block w-full py-3 bg-slate-700 hover:bg-slate-600 rounded-lg font-semibold text-center transition-colors">
                 Get Started
               </a>
             </div>
 
-            {/* Quarterly Plan */}
-            <div className="p-8 bg-slate-800/30 border border-slate-700/50 rounded-2xl hover:border-slate-600 transition-all">
+            {/* Tier 2: Standard */}
+            <div className="p-8 bg-slate-800/30 border border-slate-700/50 rounded-2xl hover:border-slate-600 transition-all flex flex-col">
               <div className="mb-6">
-                <h3 className="text-xl font-bold mb-2">Quarterly</h3>
-                <div className="flex items-baseline gap-1">
-                  <span className="text-4xl font-bold">$29</span>
-                  <span className="text-slate-400">/3 months</span>
+                <h3 className="text-xl font-bold mb-2">Standard</h3>
+                <div className="flex items-baseline gap-1 mb-1">
+                  <span className="text-4xl font-bold">$39</span>
+                  <span className="text-slate-400 text-sm">– $49.99</span>
                 </div>
+                <p className="text-purple-400 text-sm font-semibold">Operational Retainer</p>
               </div>
+              <p className="text-slate-400 leading-relaxed mb-6">
+                Quarterly maintenance for small business workflows and API stability.
+              </p>
               <ul className="space-y-3 mb-8">
                 <li className="flex items-start gap-3">
-                  <Check className="w-5 h-5 text-indigo-400 flex-shrink-0 mt-0.5" />
-                  <span className="text-slate-300">3 Months of maintenance</span>
+                  <CheckCircle2 className="w-5 h-5 text-indigo-400 flex-shrink-0 mt-0.5" />
+                  <span className="text-slate-300">Quarterly maintenance</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <Check className="w-5 h-5 text-indigo-400 flex-shrink-0 mt-0.5" />
-                  <span className="text-slate-300">Bug fixes included</span>
+                  <CheckCircle2 className="w-5 h-5 text-indigo-400 flex-shrink-0 mt-0.5" />
+                  <span className="text-slate-300">Workflow optimization</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <Check className="w-5 h-5 text-indigo-400 flex-shrink-0 mt-0.5" />
-                  <span className="text-slate-300">Priority email support</span>
+                  <CheckCircle2 className="w-5 h-5 text-indigo-400 flex-shrink-0 mt-0.5" />
+                  <span className="text-slate-300">API stability monitoring</span>
                 </li>
               </ul>
+              <div className="flex-grow"></div>
               <a href="#contact" className="block w-full py-3 bg-slate-700 hover:bg-slate-600 rounded-lg font-semibold text-center transition-colors">
                 Get Started
               </a>
             </div>
 
-            {/* Semi-Annual Plan */}
-            <div className="p-8 bg-gradient-to-br from-indigo-900/20 to-purple-900/20 border-2 border-indigo-500/50 rounded-2xl hover:border-indigo-400/50 transition-all relative">
+            {/* Tier 3: Pro */}
+            <div className="p-8 bg-slate-800/30 border border-slate-700/50 rounded-2xl hover:border-slate-600 transition-all flex flex-col">
               <div className="absolute -top-4 left-1/2 -translate-x-1/2">
                 <span className="px-4 py-1 bg-indigo-500 rounded-full text-sm font-semibold">Popular</span>
               </div>
               <div className="mb-6">
-                <h3 className="text-xl font-bold mb-2">Semi-Annual</h3>
-                <div className="flex items-baseline gap-1">
-                  <span className="text-4xl font-bold">$39</span>
-                  <span className="text-slate-400">/6 months</span>
+                <h3 className="text-xl font-bold mb-2">Pro</h3>
+                <div className="flex items-baseline gap-1 mb-1">
+                  <span className="text-4xl font-bold">$55.99</span>
+                  <span className="text-slate-400 text-sm">– $79.99</span>
                 </div>
+                <p className="text-indigo-400 text-sm font-semibold">Annual Oversight</p>
               </div>
+              <p className="text-slate-400 leading-relaxed mb-6">
+                12 months of proactive system monitoring and security updates.
+              </p>
               <ul className="space-y-3 mb-8">
                 <li className="flex items-start gap-3">
-                  <Check className="w-5 h-5 text-indigo-400 flex-shrink-0 mt-0.5" />
-                  <span className="text-slate-300">6 Months of support</span>
+                  <CheckCircle2 className="w-5 h-5 text-indigo-400 flex-shrink-0 mt-0.5" />
+                  <span className="text-slate-300">12-month coverage</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <Check className="w-5 h-5 text-indigo-400 flex-shrink-0 mt-0.5" />
-                  <span className="text-slate-300">Priority workflow support</span>
+                  <CheckCircle2 className="w-5 h-5 text-indigo-400 flex-shrink-0 mt-0.5" />
+                  <span className="text-slate-300">Proactive monitoring</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <Check className="w-5 h-5 text-indigo-400 flex-shrink-0 mt-0.5" />
-                  <span className="text-slate-300">Workflow optimization</span>
+                  <CheckCircle2 className="w-5 h-5 text-indigo-400 flex-shrink-0 mt-0.5" />
+                  <span className="text-slate-300">Security updates</span>
                 </li>
               </ul>
+              <div className="flex-grow"></div>
               <a href="#contact" className="block w-full py-3 bg-indigo-600 hover:bg-indigo-700 rounded-lg font-semibold text-center transition-colors">
                 Get Started
               </a>
             </div>
 
-            {/* Annual Plan */}
-            <div className="p-8 bg-slate-800/30 border border-slate-700/50 rounded-2xl hover:border-slate-600 transition-all">
+            {/* Tier 4: Enterprise */}
+            <div className="p-8 bg-gradient-to-br from-slate-800/50 to-slate-900/50 border-2 border-purple-500/50 rounded-2xl hover:border-purple-400/50 transition-all">
               <div className="mb-6">
-                <h3 className="text-xl font-bold mb-2">Annual</h3>
-                <div className="flex items-baseline gap-1">
-                  <span className="text-4xl font-bold">$55.99</span>
-                  <span className="text-slate-400">/year</span>
+                <h3 className="text-xl font-bold mb-2">Enterprise</h3>
+                <div className="flex items-baseline gap-1 mb-1">
+                  <span className="text-4xl font-bold">$99</span>
+                  <span className="text-slate-400 text-sm">– $800+</span>
                 </div>
+                <p className="text-purple-400 text-sm font-semibold">Custom Engineering</p>
               </div>
+              <p className="text-slate-400 leading-relaxed mb-6">
+                Dedicated Python builds and complex n8n infrastructure projects.
+              </p>
               <ul className="space-y-3 mb-8">
                 <li className="flex items-start gap-3">
-                  <Check className="w-5 h-5 text-indigo-400 flex-shrink-0 mt-0.5" />
-                  <span className="text-slate-300">12 Months of management</span>
+                  <CheckCircle2 className="w-5 h-5 text-purple-400 flex-shrink-0 mt-0.5" />
+                  <span className="text-slate-300">Custom Python development</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <Check className="w-5 h-5 text-indigo-400 flex-shrink-0 mt-0.5" />
-                  <span className="text-slate-300">API updates included</span>
+                  <CheckCircle2 className="w-5 h-5 text-purple-400 flex-shrink-0 mt-0.5" />
+                  <span className="text-slate-300">Complex n8n infrastructure</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <Check className="w-5 h-5 text-indigo-400 flex-shrink-0 mt-0.5" />
-                  <span className="text-slate-300">Dedicated support channel</span>
+                  <CheckCircle2 className="w-5 h-5 text-purple-400 flex-shrink-0 mt-0.5" />
+                  <span className="text-slate-300">Dedicated engineering team</span>
                 </li>
               </ul>
-              <a href="#contact" className="block w-full py-3 bg-slate-700 hover:bg-slate-600 rounded-lg font-semibold text-center transition-colors">
-                Get Started
+              <a href="#contact" className="block w-full py-3 bg-purple-600 hover:bg-purple-700 rounded-lg font-semibold text-center transition-colors">
+                Contact Sales
               </a>
             </div>
+          </div>
+
+          {/* Pricing Note */}
+          <div className="mt-12 text-center">
+            <p className="text-slate-400 text-sm">
+              All tiers include professional consultation and custom implementation. Prices vary based on project scope and complexity.
+            </p>
           </div>
         </div>
       </section>
 
       {/* Compliance Section */}
-      <section className="py-20 px-6 bg-slate-900/30">
+      <section className="py-20 px-6">
         <div className="container mx-auto max-w-4xl">
           <div className="p-10 bg-slate-800/40 border border-slate-700/50 rounded-2xl">
             <div className="flex items-start gap-4 mb-6">
@@ -286,17 +378,30 @@ export default function Home() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-20 px-6">
-        <div className="container mx-auto max-w-4xl text-center">
-          <Mail className="w-16 h-16 text-indigo-400 mx-auto mb-6" />
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">Ready to Automate?</h2>
-          <p className="text-xl text-slate-400 mb-8">Get in touch to discuss your automation needs</p>
-          <a 
-            href="mailto:hello@automat.com" 
-            className="inline-block px-8 py-4 bg-indigo-600 hover:bg-indigo-700 rounded-lg font-semibold text-lg transition-all hover:shadow-lg hover:shadow-indigo-500/50"
-          >
-            hello@automat.com
-          </a>
+      <section id="contact" className="py-20 px-6 bg-slate-900/50">
+        <div className="container mx-auto max-w-4xl">
+          <div className="text-center">
+            <Mail className="w-16 h-16 text-indigo-400 mx-auto mb-6" />
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">Ready to Automate?</h2>
+            <p className="text-xl text-slate-400 mb-8">Get in touch to discuss your automation needs</p>
+            
+            <div className="bg-slate-800/40 border border-slate-700/50 rounded-2xl p-8 max-w-2xl mx-auto">
+              <a 
+                href="mailto:hello@automat.com" 
+                className="inline-flex items-center gap-2 px-8 py-4 bg-indigo-600 hover:bg-indigo-700 rounded-lg font-semibold text-lg transition-all hover:shadow-lg hover:shadow-indigo-500/50 mb-6"
+              >
+                <Mail className="w-5 h-5" />
+                hello@automat.com
+              </a>
+              
+              <div className="mt-6 pt-6 border-t border-slate-700/50">
+                <p className="text-slate-400 flex items-center justify-center gap-2">
+                  <Check className="w-5 h-5 text-green-400" />
+                  We typically respond to inquiries within 24 hours
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -337,6 +442,9 @@ export default function Home() {
                 <a href="mailto:hello@automat.com" className="hover:text-white transition-colors">
                   hello@automat.com
                 </a>
+              </p>
+              <p className="text-slate-400 text-sm mt-2">
+                Response time: Within 24 hours
               </p>
             </div>
           </div>
