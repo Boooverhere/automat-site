@@ -511,11 +511,11 @@ export default function Home() {
             
             <div className="bg-slate-800/40 border border-indigo-500/20 rounded-xl p-8 max-w-2xl mx-auto backdrop-blur-sm">
               <a 
-                href="mailto:hello@automat.com" 
+                href="mailto:contact@automathub.com" 
                 className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 rounded-lg font-semibold text-lg transition-all shadow-lg shadow-indigo-500/50 mb-6"
               >
                 <Mail className="w-5 h-5" />
-                hello@automat.com
+                contact@automathub.com
               </a>
               
               <div className="mt-6 pt-6 border-t border-indigo-500/20">
