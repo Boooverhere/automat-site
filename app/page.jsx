@@ -579,7 +579,7 @@ export default function Home() {
               <h4 className="font-semibold mb-4 text-sm">Contact</h4>
               <p className="text-slate-400 text-sm">
                 <a href="mailto:hello@automat.com" className="hover:text-white transition-colors">
-                  hello@automat.com
+                  contact@automathub.com
                 </a>
               </p>
               <p className="text-slate-500 text-xs mt-2">
