@@ -7,6 +7,10 @@ export const metadata = {
   authors: [{ name: 'Automat' }],
   creator: 'Automat',
   publisher: 'Automat',
+  icons: {
+    icon: '/favicon.ico',
+    apple: '/apple-touch-icon.png',
+  },
   formatDetection: {
     email: false,
     address: false,

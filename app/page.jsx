@@ -13,12 +13,14 @@ export default function Home() {
       <header className="fixed top-0 left-0 right-0 z-50 bg-slate-900/95 backdrop-blur-xl border-b border-indigo-500/20">
         <nav className="container mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
-            <Link href="/" className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-lg flex items-center justify-center shadow-lg shadow-indigo-500/50">
-                <Zap className="w-5 h-5 text-white" />
-              </div>
-              <span className="text-2xl font-bold tracking-tight">Automat</span>
-            </Link>
+            <Link href="/" className="flex items-center space-x-3">
+            <img 
+                src="/AutomatHub-logo.svg" 
+                alt="Automat Logo" 
+                className="h-10 w-auto"
+            />
+               <span className="text-2xl font-bold tracking-tight"></span>
+              </Link>
             
             {/* Desktop Navigation */}
             <div className="hidden md:flex items-center space-x-8">
@@ -361,7 +363,7 @@ export default function Home() {
                 </li>
               </ul>
               <div className="flex-grow"></div>
-              <a href="#contact" className="block w-full py-3 bg-slate-700 hover:bg-slate-600 rounded-lg font-semibold text-center transition-colors border border-slate-600">
+              <a href="https://calendly.com/automathub/30min" className="block w-full py-3 bg-slate-700 hover:bg-slate-600 rounded-lg font-semibold text-center transition-colors border border-slate-600">
                 Get Started
               </a>
             </div>
@@ -394,7 +396,7 @@ export default function Home() {
                 </li>
               </ul>
               <div className="flex-grow"></div>
-              <a href="#contact" className="block w-full py-3 bg-slate-700 hover:bg-slate-600 rounded-lg font-semibold text-center transition-colors border border-slate-600">
+              <a href="https://calendly.com/automathub/30min" className="block w-full py-3 bg-slate-700 hover:bg-slate-600 rounded-lg font-semibold text-center transition-colors border border-slate-600">
                 Get Started
               </a>
             </div>
@@ -430,7 +432,7 @@ export default function Home() {
                 </li>
               </ul>
               <div className="flex-grow"></div>
-              <a href="#contact" className="block w-full py-3 bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 rounded-lg font-semibold text-center transition-all shadow-lg shadow-indigo-500/50">
+              <a href="https://calendly.com/automathub/30min" className="block w-full py-3 bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 rounded-lg font-semibold text-center transition-all shadow-lg shadow-indigo-500/50">
                 Get Started
               </a>
             </div>
@@ -463,7 +465,7 @@ export default function Home() {
                 </li>
               </ul>
               <div className="flex-grow"></div>
-              <a href="#contact" className="block w-full py-3 bg-slate-700 hover:bg-slate-600 rounded-lg font-semibold text-center transition-colors border border-slate-600">
+              <a href="https://calendly.com/automathub/30min" className="block w-full py-3 bg-slate-700 hover:bg-slate-600 rounded-lg font-semibold text-center transition-colors border border-slate-600">
                 Contact Sales
               </a>
             </div>
@@ -534,11 +536,12 @@ export default function Home() {
         <div className="container mx-auto max-w-6xl">
           <div className="grid md:grid-cols-4 gap-8 mb-8">
             <div>
-              <div className="flex items-center space-x-2 mb-4">
-                <div className="w-8 h-8 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-lg flex items-center justify-center shadow-lg shadow-indigo-500/30">
-                  <Zap className="w-5 h-5 text-white" />
-                </div>
-                <span className="text-xl font-bold">Automat</span>
+              <div className="flex items-center space-x-3 mb-4">
+                <img 
+                  src="/AutomatHub-logo.svg" 
+                  alt="Automat Logo" 
+                  className="h-10 w-auto"
+                />
               </div>
               <p className="text-slate-400 text-sm">
                 Technical automation consultancy for enterprise systems.
