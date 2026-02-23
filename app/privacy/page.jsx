@@ -178,7 +178,7 @@ export default function Privacy() {
             <p className="text-slate-300 leading-relaxed">
               If you have questions or concerns about this Privacy Policy or our data practices, please contact us at:{' '}
               <a href="mailto:hello@automat.com" className="text-indigo-400 hover:text-indigo-300">
-                hello@automat.com
+                contact@automathub.com
               </a>
             </p>
           </section>
