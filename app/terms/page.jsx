@@ -1,32 +1,10 @@
 'use client';
 
-import { ArrowLeft, Zap } from 'lucide-react';
 import Link from 'next/link';
-import Footer from '@/app/components/footer';
 
 export default function Terms() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-indigo-900 text-white">
-      {/* Header */}
-      <header className="border-b border-indigo-500/20 bg-slate-900/95">
-        <nav className="container mx-auto px-6 py-4">
-          <div className="flex items-center justify-between">
-            <Link href="/" className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-lg flex items-center justify-center shadow-lg shadow-indigo-500/50">
-                <Zap className="w-5 h-5 text-white" />
-              </div>
-              <span className="text-2xl font-bold tracking-tight">Automat</span>
-            </Link>
-            <Link 
-              href="/"
-              className="inline-flex items-center gap-2 text-slate-300 hover:text-white transition-colors text-sm"
-            >
-              <ArrowLeft className="w-4 h-4" />
-              Back to Home
-            </Link>
-          </div>
-        </nav>
-      </header>
 
       <div className="container mx-auto max-w-4xl px-6 py-20">
         <h1 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-white to-slate-300 bg-clip-text text-transparent">Terms of Service</h1>
@@ -246,8 +224,6 @@ export default function Terms() {
         </div>
       </div>
 
-      {/* Footer */}
-      <footer/>
     </div>
   );
 }
