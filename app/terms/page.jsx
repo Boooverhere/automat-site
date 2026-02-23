@@ -2,6 +2,7 @@
 
 import { ArrowLeft, Zap } from 'lucide-react';
 import Link from 'next/link';
+import Footer from '@/app/components/footer';
 
 export default function Terms() {
   return (
@@ -246,69 +247,7 @@ export default function Terms() {
       </div>
 
       {/* Footer */}
-      <footer className="py-12 px-6 border-t border-indigo-500/10">
-        <div className="container mx-auto max-w-6xl">
-          <div className="grid md:grid-cols-4 gap-8 mb-8">
-            <div>
-              <Link href="/" className="flex items-center space-x-2 mb-4">
-                <div className="w-8 h-8 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-lg flex items-center justify-center shadow-lg shadow-indigo-500/30">
-                  <Zap className="w-5 h-5 text-white" />
-                </div>
-                <span className="text-xl font-bold">Automat</span>
-              </Link>
-              <p className="text-slate-400 text-sm">
-                Technical automation consultancy for enterprise systems.
-              </p>
-            </div>
-
-            <div>
-              <h4 className="font-semibold mb-4 text-sm">Services</h4>
-              <ul className="space-y-2 text-slate-400 text-sm">
-                <li>
-                  <Link href="/#services" className="hover:text-white transition-colors">Custom Integrations</Link>
-                </li>
-                <li>
-                  <Link href="/#services" className="hover:text-white transition-colors">Workflow Design</Link>
-                </li>
-                <li>
-                  <Link href="/case-studies" className="hover:text-white transition-colors">Case Studies</Link>
-                </li>
-              </ul>
-            </div>
-
-            <div>
-              <h4 className="font-semibold mb-4 text-sm">Legal</h4>
-              <ul className="space-y-2 text-slate-400 text-sm">
-                <li>
-                  <Link href="/terms" className="hover:text-white transition-colors">Terms of Service</Link>
-                </li>
-                <li>
-                  <Link href="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
-                </li>
-                <li>
-                  <Link href="/refunds" className="hover:text-white transition-colors">Refund Policy</Link>
-                </li>
-              </ul>
-            </div>
-
-            <div>
-              <h4 className="font-semibold mb-4 text-sm">Contact</h4>
-              <p className="text-slate-400 text-sm">
-                <a href="mailto:hello@automat.com" className="hover:text-white transition-colors">
-                  hello@automat.com
-                </a>
-              </p>
-              <p className="text-slate-500 text-xs mt-2">
-                24-hour response time
-              </p>
-            </div>
-          </div>
-
-          <div className="pt-8 border-t border-indigo-500/10 text-center text-slate-500 text-sm">
-            <p>&copy; {new Date().getFullYear()} Automat. All rights reserved.</p>
-          </div>
-        </div>
-      </footer>
+      <footer/>
     </div>
   );
 }

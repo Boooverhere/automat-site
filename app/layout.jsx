@@ -1,4 +1,6 @@
 import './globals.css'
+import Navbar from './components/navbar'
+import Footer from './components/footer'
 
 export const metadata = {
   title: 'Automat - Custom Workflow Automation & API Engineering Services',
@@ -67,7 +69,11 @@ export default function RootLayout({ children }) {
         <meta name="theme-color" content="#6366f1" />
         <link rel="canonical" href="https://automathub.com" />
       </head>
-      <body>{children}</body>
+      <body>
+        <Navbar />
+        {children}
+        <Footer />
+      </body>
     </html>
   )
 }

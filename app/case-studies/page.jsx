@@ -1,31 +1,11 @@
 'use client';
 
-import { Zap, ArrowLeft, Database, Code, TrendingUp, FileText, CheckCircle2, Terminal, Server, GitBranch } from 'lucide-react';
+import { ArrowLeft, Database, Code, TrendingUp, FileText, CheckCircle2, Terminal } from 'lucide-react';
 import Link from 'next/link';
 
 export default function CaseStudies() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-indigo-900 text-white">
-      {/* Header */}
-      <header className="fixed top-0 left-0 right-0 z-50 bg-slate-900/95 backdrop-blur-xl border-b border-indigo-500/20">
-        <nav className="container mx-auto px-6 py-4">
-          <div className="flex items-center justify-between">
-            <Link href="/" className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-lg flex items-center justify-center shadow-lg shadow-indigo-500/50">
-                <Zap className="w-5 h-5 text-white" />
-              </div>
-              <span className="text-2xl font-bold tracking-tight">Automat</span>
-            </Link>
-            
-            <div className="flex items-center space-x-8">
-              <Link href="/" className="text-slate-300 hover:text-white transition-colors text-sm flex items-center gap-2">
-                <ArrowLeft className="w-4 h-4" />
-                Back to Home
-              </Link>
-            </div>
-          </div>
-        </nav>
-      </header>
 
       {/* Hero */}
       <section className="pt-32 pb-12 px-6">
@@ -622,70 +602,6 @@ export default function CaseStudies() {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="py-12 px-6 border-t border-indigo-500/10">
-        <div className="container mx-auto max-w-6xl">
-          <div className="grid md:grid-cols-4 gap-8 mb-8">
-            <div>
-              <Link href="/" className="flex items-center space-x-2 mb-4">
-                <div className="w-8 h-8 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-lg flex items-center justify-center shadow-lg shadow-indigo-500/30">
-                  <Zap className="w-5 h-5 text-white" />
-                </div>
-                <span className="text-xl font-bold">Automat</span>
-              </Link>
-              <p className="text-slate-400 text-sm">
-                Technical automation consultancy for enterprise systems.
-              </p>
-            </div>
-
-            <div>
-              <h4 className="font-semibold mb-4 text-sm">Resources</h4>
-              <ul className="space-y-2 text-slate-400 text-sm">
-                <li>
-                  <Link href="/case-studies" className="hover:text-white transition-colors">Case Studies</Link>
-                </li>
-                <li>
-                  <Link href="/#services" className="hover:text-white transition-colors">Technical Services</Link>
-                </li>
-                <li>
-                  <Link href="/#pricing" className="hover:text-white transition-colors">Service Retainers</Link>
-                </li>
-              </ul>
-            </div>
-
-            <div>
-              <h4 className="font-semibold mb-4 text-sm">Legal</h4>
-              <ul className="space-y-2 text-slate-400 text-sm">
-                <li>
-                  <Link href="/terms" className="hover:text-white transition-colors">Terms of Service</Link>
-                </li>
-                <li>
-                  <Link href="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
-                </li>
-                <li>
-                  <Link href="/refunds" className="hover:text-white transition-colors">Refund Policy</Link>
-                </li>
-              </ul>
-            </div>
-
-            <div>
-              <h4 className="font-semibold mb-4 text-sm">Contact</h4>
-              <p className="text-slate-400 text-sm">
-                <a href="mailto:hello@automat.com" className="hover:text-white transition-colors">
-                  hello@automat.com
-                </a>
-              </p>
-              <p className="text-slate-500 text-xs mt-2">
-                24-hour response time
-              </p>
-            </div>
-          </div>
-
-          <div className="pt-8 border-t border-indigo-500/10 text-center text-slate-500 text-sm">
-            <p>&copy; {new Date().getFullYear()} Automat. All rights reserved.</p>
-          </div>
-        </div>
-      </footer>
     </div>
   );
 }
