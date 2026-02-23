@@ -16,6 +16,7 @@ export default function Navbar() {
               src="/AutomatHub-logo.svg"
               alt="Automat Logo"
               className="h-10 w-auto"
+              style={{ height: '40px', width: 'auto' }}
             />
             <span className="text-2xl font-bold tracking-tight"></span>
           </Link>

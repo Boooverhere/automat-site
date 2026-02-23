@@ -6,7 +6,7 @@ import Link from 'next/link';
 export default function Privacy() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-indigo-950 text-white">
-      <div className="container mx-auto max-w-4xl px-6 py-20">
+      <div className="container mx-auto max-w-4xl px-6 pt-32 pb-20">
         <Link 
           href="/"
           className="inline-flex items-center gap-2 text-slate-400 hover:text-white transition-colors mb-8"

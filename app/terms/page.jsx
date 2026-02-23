@@ -6,7 +6,7 @@ export default function Terms() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-indigo-900 text-white">
 
-      <div className="container mx-auto max-w-4xl px-6 py-20">
+      <div className="container mx-auto max-w-4xl px-6 pt-32 pb-20">
         <h1 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-white to-slate-300 bg-clip-text text-transparent">Terms of Service</h1>
         <p className="text-slate-400 mb-12 text-sm">Last Updated: February 14, 2026</p>
 
