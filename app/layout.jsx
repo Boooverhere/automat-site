@@ -3,7 +3,10 @@ import Navbar from './components/navbar'
 import Footer from './components/footer'
 
 export const metadata = {
-  title: 'Automat - Custom Workflow Automation & API Engineering Services',
+  title: {
+    default: 'Automat - Custom Workflow Automation & API Engineering Services',
+    template: '%s | Automat',
+  },
   description: 'Professional Python-based automation, API integration, and technical consulting for enterprises. Custom n8n workflows, system monitoring, and ongoing maintenance retainers.',
   keywords: 'workflow automation, API engineering, Python automation, n8n workflows, Zapier integration, custom integrations, technical consulting, automation maintenance, API monitoring, enterprise automation',
   authors: [{ name: 'Automat' }],
@@ -74,6 +77,25 @@ export default function RootLayout({ children }) {
         <link rel="canonical" href="https://automathub.com" />
       </head>
       <body>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@type': 'Organization',
+              name: 'Automat',
+              url: 'https://automathub.com',
+              logo: 'https://automathub.com/AutomatHub-logo.svg',
+              description: 'Technical automation consultancy specializing in Python-based automation, API engineering, and custom workflow design for enterprise systems.',
+              email: 'contact@automathub.com',
+              sameAs: [
+                'https://github.com/boooverhere',
+                'https://linkedin.com/in/elyoussoufimehdi',
+                'https://x.com/automat_mehdi',
+              ],
+            }),
+          }}
+        />
         <Navbar />
         {children}
         <Footer />

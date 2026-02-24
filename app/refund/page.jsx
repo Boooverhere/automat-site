@@ -1,6 +1,11 @@
-'use client';
-
 import Link from 'next/link';
+
+export const metadata = {
+  title: 'Refund Policy',
+  description: 'Automat refund policy covering tier-by-tier refund terms, pro-rated cancellations for annual retainers, and how to request a refund.',
+  alternates: { canonical: 'https://automathub.com/refund' },
+  robots: { index: true, follow: true },
+};
 
 export default function Refunds() {
   return (

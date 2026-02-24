@@ -1,10 +1,5 @@
-# Allow all crawlers
 User-agent: *
 Allow: /
+Disallow: /trash/
 
-# Disallow admin or private pages (if any)
-# Disallow: /admin/
-# Disallow: /private/
-
-# Sitemap location
 Sitemap: https://automathub.com/sitemap.xml

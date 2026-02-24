@@ -1,11 +1,64 @@
-'use client';
-
 import { ArrowLeft, Database, Code, TrendingUp, FileText, CheckCircle2, Terminal } from 'lucide-react';
 import Link from 'next/link';
+
+export const metadata = {
+  title: 'Case Studies – Automation Implementation Reports',
+  description: 'Detailed technical breakdowns of custom automation implementations: e-commerce inventory sync, financial reporting pipelines, and customer onboarding workflows.',
+  alternates: { canonical: 'https://automathub.com/case-studies' },
+  openGraph: {
+    title: 'Case Studies – Automat Automation Implementations',
+    description: 'Real-world technical reports covering API integrations, Python automation, and workflow design deployed for enterprise clients.',
+    url: 'https://automathub.com/case-studies',
+  },
+};
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name: 'Automation Case Studies',
+  description: 'Technical implementation reports for custom automation projects.',
+  url: 'https://automathub.com/case-studies',
+  itemListElement: [
+    {
+      '@type': 'ListItem',
+      position: 1,
+      item: {
+        '@type': 'Article',
+        name: 'E-Commerce Inventory Synchronization System',
+        description: 'Multi-platform real-time inventory management for distributed retail operations. Achieved 99.7% sync accuracy and 4.2s average latency.',
+        url: 'https://automathub.com/case-studies#inventory-sync',
+        author: { '@type': 'Organization', name: 'Automat' },
+      },
+    },
+    {
+      '@type': 'ListItem',
+      position: 2,
+      item: {
+        '@type': 'Article',
+        name: 'Financial Reporting Automation',
+        description: 'Executive dashboard with automated daily financial aggregation. Reduced report generation from 6 hours to 12 minutes.',
+        url: 'https://automathub.com/case-studies#financial-reporting',
+        author: { '@type': 'Organization', name: 'Automat' },
+      },
+    },
+    {
+      '@type': 'ListItem',
+      position: 3,
+      item: {
+        '@type': 'Article',
+        name: 'Customer Onboarding Automation',
+        description: 'End-to-end onboarding workflow with document processing and CRM integration. Reduced onboarding time by 73%.',
+        url: 'https://automathub.com/case-studies#onboarding-system',
+        author: { '@type': 'Organization', name: 'Automat' },
+      },
+    },
+  ],
+};
 
 export default function CaseStudies() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-indigo-900 text-white">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
       {/* Hero */}
       <section className="pt-32 pb-12 px-6">

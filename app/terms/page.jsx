@@ -1,6 +1,11 @@
-'use client';
-
 import Link from 'next/link';
+
+export const metadata = {
+  title: 'Terms of Service',
+  description: 'Read the Automat Terms of Service covering service definitions, intellectual property rights, maintenance retainers, payment terms, and client responsibilities.',
+  alternates: { canonical: 'https://automathub.com/terms' },
+  robots: { index: true, follow: true },
+};
 
 export default function Terms() {
   return (

@@ -1,7 +1,12 @@
-'use client';
-
 import { ArrowLeft } from 'lucide-react';
 import Link from 'next/link';
+
+export const metadata = {
+  title: 'Privacy Policy',
+  description: 'Learn how Automat collects, uses, and protects your personal information when you use our workflow automation and API engineering services.',
+  alternates: { canonical: 'https://automathub.com/privacy' },
+  robots: { index: true, follow: true },
+};
 
 export default function Privacy() {
   return (

@@ -1,11 +1,66 @@
-'use client';
-
 import { Check, Zap, Github, Linkedin, Twitter, Code, Settings, Shield, Mail, ArrowRight, CheckCircle2, FileText, TrendingUp, Database } from 'lucide-react';
 import Link from 'next/link';
+
+export const metadata = {
+  title: 'Custom Workflow Automation & API Engineering Services',
+  description: 'Professional Python-based automation, API integration, and technical consulting for enterprises. Custom n8n workflows, system monitoring, and ongoing maintenance retainers.',
+  alternates: { canonical: 'https://automathub.com' },
+};
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'ProfessionalService',
+  name: 'Automat',
+  url: 'https://automathub.com',
+  logo: 'https://automathub.com/AutomatHub-logo.svg',
+  description: 'Technical automation consultancy specializing in Python-based automation, API engineering, and custom workflow design for enterprise systems.',
+  email: 'contact@automathub.com',
+  priceRange: '$14.99 - $800+',
+  hasOfferCatalog: {
+    '@type': 'OfferCatalog',
+    name: 'Automation Service Retainers',
+    itemListElement: [
+      {
+        '@type': 'Offer',
+        name: 'Entry – Logic & Script Audits',
+        description: 'One-time review of automation settings or single-script health checks.',
+        price: '14.99',
+        priceCurrency: 'USD',
+      },
+      {
+        '@type': 'Offer',
+        name: 'Standard – Operational Retainer',
+        description: 'Quarterly maintenance for small business workflows and API stability.',
+        price: '39.00',
+        priceCurrency: 'USD',
+      },
+      {
+        '@type': 'Offer',
+        name: 'Pro – Annual Oversight',
+        description: '12 months of proactive system monitoring and security updates.',
+        price: '55.99',
+        priceCurrency: 'USD',
+      },
+      {
+        '@type': 'Offer',
+        name: 'Enterprise – Custom Engineering',
+        description: 'Full-scale custom automation engineering and API integration for enterprise systems.',
+        price: '99.00',
+        priceCurrency: 'USD',
+      },
+    ],
+  },
+  makesOffer: [
+    { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Custom API Integrations' } },
+    { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Workflow Design & Automation' } },
+    { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Ongoing Maintenance Retainers' } },
+  ],
+};
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-indigo-900 text-white">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
       {/* Hero Section */}
       <section className="pt-32 pb-20 px-6">

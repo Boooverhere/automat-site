@@ -1,42 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <!-- Homepage -->
+
   <url>
     <loc>https://automathub.com/</loc>
-    <lastmod>2026-02-14</lastmod>
+    <lastmod>2026-02-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
-  
-  <!-- Case Studies -->
+
   <url>
     <loc>https://automathub.com/case-studies</loc>
-    <lastmod>2026-02-14</lastmod>
+    <lastmod>2026-02-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  
-  <!-- Terms of Service -->
+
   <url>
     <loc>https://automathub.com/terms</loc>
     <lastmod>2026-02-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
   </url>
-  
-  <!-- Privacy Policy -->
+
   <url>
     <loc>https://automathub.com/privacy</loc>
-    <lastmod>2026-02-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <lastmod>2026-02-11</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
   </url>
-  
-  <!-- Refund Policy -->
+
   <url>
-    <loc>https://automathub.com/refunds</loc>
+    <loc>https://automathub.com/refund</loc>
     <lastmod>2026-02-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
   </url>
+
 </urlset>
