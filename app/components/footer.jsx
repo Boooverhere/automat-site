@@ -90,7 +90,7 @@ export default function Footer() {
             <Link href="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
           </li>
           <li>
-            <Link href="/refunds" className="hover:text-white transition-colors">Refund Policy</Link>
+            <Link href="/refund" className="hover:text-white transition-colors">Refund Policy</Link>
           </li>
         </ul>
       </div>
