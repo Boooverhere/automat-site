@@ -1,4 +1,4 @@
-import { Check, Zap, Github, Linkedin, Twitter, Code, Settings, Shield, Mail, ArrowRight, CheckCircle2, FileText, TrendingUp, Database } from 'lucide-react';
+import { Check, Zap, Github, Linkedin, Twitter, Code, Settings, Shield, Mail, ArrowRight, CheckCircle2, FileText, TrendingUp, Database, Globe, Sparkles } from 'lucide-react';
 import Link from 'next/link';
 
 export const metadata = {
@@ -506,6 +506,83 @@ export default function Home() {
                   we do not resell third-party software licenses. Every automation solution is built from the ground up to meet 
                   your specific requirements, ensuring full compliance and ownership rights.
                 </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Website Building Section */}
+      <section id="web-design" className="py-20 px-6">
+        <div className="container mx-auto max-w-6xl">
+          <div className="relative rounded-2xl overflow-hidden border border-emerald-500/20 bg-gradient-to-br from-slate-800/60 via-emerald-900/20 to-slate-800/60 backdrop-blur-sm p-10 md:p-16">
+            {/* Background glow */}
+            <div className="absolute -top-20 -right-20 w-64 h-64 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none" />
+            <div className="absolute -bottom-20 -left-20 w-64 h-64 bg-teal-500/10 rounded-full blur-3xl pointer-events-none" />
+
+            <div className="relative grid md:grid-cols-2 gap-12 items-center">
+              {/* Left copy */}
+              <div>
+                <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-emerald-500/10 border border-emerald-500/30 rounded-full text-emerald-300 text-sm font-medium mb-6">
+                  <Sparkles className="w-3.5 h-3.5" />
+                  New Service
+                </div>
+
+                <h2 className="text-4xl md:text-5xl font-bold mb-4 leading-tight">
+                  <span className="bg-gradient-to-r from-white to-slate-300 bg-clip-text text-transparent">
+                    Don't have a website yet?
+                  </span>
+                </h2>
+
+                <p className="text-lg text-slate-300 leading-relaxed mb-6">
+                  Every serious business needs a strong web presence. We design and build custom websites — fast-loading, professional, and built to convert — so you can focus on running your business.
+                </p>
+
+                <ul className="space-y-3 mb-8 text-slate-300 text-sm">
+                  <li className="flex items-center gap-2">
+                    <span className="w-5 h-5 bg-emerald-500/20 border border-emerald-500/30 rounded-full flex items-center justify-center flex-shrink-0">
+                      <Check className="w-3 h-3 text-emerald-400" />
+                    </span>
+                    Landing pages, portfolios, business sites & e-commerce
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <span className="w-5 h-5 bg-emerald-500/20 border border-emerald-500/30 rounded-full flex items-center justify-center flex-shrink-0">
+                      <Check className="w-3 h-3 text-emerald-400" />
+                    </span>
+                    Custom-built to your brand — no templates, no page builders
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <span className="w-5 h-5 bg-emerald-500/20 border border-emerald-500/30 rounded-full flex items-center justify-center flex-shrink-0">
+                      <Check className="w-3 h-3 text-emerald-400" />
+                    </span>
+                    SEO-ready, mobile-first, and fast by default
+                  </li>
+                </ul>
+
+                <Link
+                  href="/website-brief"
+                  className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 rounded-lg font-semibold text-lg transition-all shadow-lg shadow-emerald-500/30"
+                >
+                  <Globe className="w-5 h-5" />
+                  Tell us about your vision
+                  <ArrowRight className="w-4 h-4" />
+                </Link>
+              </div>
+
+              {/* Right visual */}
+              <div className="hidden md:grid grid-cols-2 gap-4">
+                {[
+                  { label: "Landing Page", desc: "Capture leads & drive conversions", color: "from-emerald-500/20 to-teal-500/20", border: "border-emerald-500/30" },
+                  { label: "Portfolio", desc: "Show your work professionally", color: "from-teal-500/20 to-cyan-500/20", border: "border-teal-500/30" },
+                  { label: "Business Site", desc: "Full presence for your company", color: "from-cyan-500/20 to-blue-500/20", border: "border-cyan-500/30" },
+                  { label: "E-Commerce", desc: "Sell online with a custom store", color: "from-blue-500/20 to-indigo-500/20", border: "border-blue-500/30" },
+                ].map((item) => (
+                  <div key={item.label} className={`p-5 bg-gradient-to-br ${item.color} border ${item.border} rounded-xl`}>
+                    <Globe className="w-5 h-5 text-emerald-400 mb-3" />
+                    <div className="font-semibold text-white text-sm mb-1">{item.label}</div>
+                    <div className="text-slate-400 text-xs leading-relaxed">{item.desc}</div>
+                  </div>
+                ))}
               </div>
             </div>
           </div>

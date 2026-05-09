@@ -27,9 +27,10 @@ export default function Navbar() {
             <a href="/#process" className="text-slate-300 hover:text-white transition-colors">Process</a>
             <Link href="/case-studies" className="text-slate-300 hover:text-white transition-colors">Case Studies</Link>
             <a href="/#pricing" className="text-slate-300 hover:text-white transition-colors">Pricing</a>
-            <a href="/#contact" className="px-6 py-2.5 bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 rounded-lg font-medium transition-all shadow-lg shadow-indigo-500/30">
+            <a href="/#web-design" className="text-emerald-400 hover:text-emerald-300 transition-colors font-medium">Websites</a>
+            <Link href="/contact" className="px-6 py-2.5 bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 rounded-lg font-medium transition-all shadow-lg shadow-indigo-500/30">
               Contact
-            </a>
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -49,9 +50,10 @@ export default function Navbar() {
               <a href="/#process" className="text-slate-300 hover:text-white transition-colors">Process</a>
               <Link href="/case-studies" className="text-slate-300 hover:text-white transition-colors">Case Studies</Link>
               <a href="/#pricing" className="text-slate-300 hover:text-white transition-colors">Pricing</a>
-              <a href="/#contact" className="px-6 py-2.5 bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 rounded-lg font-medium transition-all text-center shadow-lg shadow-indigo-500/30">
+              <a href="/#web-design" className="text-emerald-400 hover:text-emerald-300 transition-colors font-medium">Websites</a>
+              <Link href="/contact" className="px-6 py-2.5 bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 rounded-lg font-medium transition-all text-center shadow-lg shadow-indigo-500/30">
                 Contact
-              </a>
+              </Link>
             </div>
           </div>
         )}

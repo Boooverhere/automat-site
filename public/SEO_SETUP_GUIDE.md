@@ -41,7 +41,7 @@ In `sitemap.xml`, update `<lastmod>` dates to when you publish
 ### 1. Add Your Site
 1. Go to https://search.google.com/search-console
 2. Click "Add Property"
-3. Enter your domain: `https://yourdomain.com`
+3. Enter your domain: `https://automathub.com`
 4. Choose verification method (recommend HTML file upload)
 
 ### 2. Verify Ownership
