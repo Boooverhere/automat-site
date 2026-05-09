@@ -332,109 +332,119 @@ export default function Home() {
       {/* Pricing Section */}
       <section id="pricing" className="py-20 px-6">
         <div className="container mx-auto max-w-6xl">
-          <div className="mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-white to-slate-300 bg-clip-text text-transparent">Service Retainers</h2>
-            <p className="text-xl text-slate-300">Implementation and maintenance plans for the projects described in our case studies</p>
+          <div className="mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-white to-slate-300 bg-clip-text text-transparent">Simple, Transparent Pricing</h2>
+            <p className="text-xl text-slate-300">Fraction of agency rates. No hidden fees. Cancel anytime.</p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {/* Tier 1: Entry */}
-            <div className="p-8 bg-slate-800/40 border border-indigo-500/20 rounded-xl hover:border-indigo-500/40 transition-all flex flex-col backdrop-blur-sm">
+          {/* Agency comparison callout */}
+          <div className="mb-12 inline-flex items-center gap-2 px-4 py-2 bg-indigo-500/10 border border-indigo-500/20 rounded-full text-sm text-indigo-300">
+            <span className="w-2 h-2 rounded-full bg-indigo-400 animate-pulse"></span>
+            Agencies charge $1,500–$5,000/month for the same work. We don't.
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 items-stretch">
+
+            {/* Tier 1: Starter */}
+            <div className="p-8 bg-slate-800/40 border border-slate-700 rounded-xl hover:border-indigo-500/40 transition-all flex flex-col backdrop-blur-sm">
               <div className="mb-6">
-                <h3 className="text-xl font-bold mb-2">Entry</h3>
-                <div className="flex items-baseline gap-1 mb-1">
-                  <span className="text-4xl font-bold">$14.99</span>
-                  <span className="text-slate-500 text-sm">– $17.99</span>
+                <p className="text-xs font-semibold uppercase tracking-widest text-slate-400 mb-3">Starter</p>
+                <div className="flex items-end gap-1 mb-1">
+                  <span className="text-5xl font-extrabold">$49</span>
+                  <span className="text-slate-400 text-sm mb-2">/month</span>
                 </div>
-                <p className="text-indigo-300 text-sm font-medium">Logic & Script Audits</p>
+                <p className="text-indigo-300 text-sm font-medium">Audit & Health Check</p>
               </div>
-              <p className="text-slate-300 leading-relaxed mb-6 text-sm">
-                One-time review of automation settings or single-script health checks.
+              <p className="text-slate-400 text-sm leading-relaxed mb-6">
+                Best for businesses new to automation. Get a clear picture of what's working and what isn't.
               </p>
-              <ul className="space-y-3 mb-8">
-                <li className="flex items-start gap-3">
-                  <CheckCircle2 className="w-4 h-4 text-indigo-400 flex-shrink-0 mt-0.5" />
-                  <span className="text-slate-300 text-sm">Automation settings review</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <CheckCircle2 className="w-4 h-4 text-indigo-400 flex-shrink-0 mt-0.5" />
-                  <span className="text-slate-300 text-sm">Single-script health check</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <CheckCircle2 className="w-4 h-4 text-indigo-400 flex-shrink-0 mt-0.5" />
-                  <span className="text-slate-300 text-sm">Detailed audit report</span>
-                </li>
+              <ul className="space-y-3 flex-1 mb-8">
+                {[
+                  '1 workflow or script audit/month',
+                  'Detailed written report',
+                  'Fix recommendations',
+                  '48-hour turnaround',
+                  'Email support',
+                ].map((item) => (
+                  <li key={item} className="flex items-start gap-3">
+                    <CheckCircle2 className="w-4 h-4 text-indigo-400 flex-shrink-0 mt-0.5" />
+                    <span className="text-slate-300 text-sm">{item}</span>
+                  </li>
+                ))}
               </ul>
-              <div className="flex-grow"></div>
-              <a href="https://calendly.com/automathub/30min" className="block w-full py-3 bg-slate-700 hover:bg-slate-600 rounded-lg font-semibold text-center transition-colors border border-slate-600">
+              <a href="https://calendly.com/automathub/30min" className="block w-full py-3 bg-slate-700 hover:bg-slate-600 border border-slate-600 rounded-lg font-semibold text-center transition-colors text-sm">
                 Get Started
               </a>
             </div>
 
-            {/* Tier 2: Standard */}
+            {/* Tier 2: Build */}
             <div className="p-8 bg-slate-800/40 border border-purple-500/20 rounded-xl hover:border-purple-500/40 transition-all flex flex-col backdrop-blur-sm">
               <div className="mb-6">
-                <h3 className="text-xl font-bold mb-2">Standard</h3>
-                <div className="flex items-baseline gap-1 mb-1">
-                  <span className="text-4xl font-bold">$39</span>
-                  <span className="text-slate-500 text-sm">– $49.99</span>
+                <p className="text-xs font-semibold uppercase tracking-widest text-slate-400 mb-3">Build</p>
+                <div className="flex items-end gap-1 mb-1">
+                  <span className="text-5xl font-extrabold">$199</span>
+                  <span className="text-slate-400 text-sm mb-2">/month</span>
                 </div>
-                <p className="text-purple-300 text-sm font-medium">Operational Retainer</p>
+                <p className="text-purple-300 text-sm font-medium">Active Automation</p>
               </div>
-              <p className="text-slate-300 leading-relaxed mb-6 text-sm">
-                Quarterly maintenance for small business workflows and API stability.
+              <p className="text-slate-400 text-sm leading-relaxed mb-6">
+                Ideal for growing businesses ready to start automating. We build and maintain your workflows.
               </p>
-              <ul className="space-y-3 mb-8">
-                <li className="flex items-start gap-3">
-                  <CheckCircle2 className="w-4 h-4 text-purple-400 flex-shrink-0 mt-0.5" />
-                  <span className="text-slate-300 text-sm">Quarterly maintenance</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <CheckCircle2 className="w-4 h-4 text-purple-400 flex-shrink-0 mt-0.5" />
-                  <span className="text-slate-300 text-sm">Workflow optimization</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <CheckCircle2 className="w-4 h-4 text-purple-400 flex-shrink-0 mt-0.5" />
-                  <span className="text-slate-300 text-sm">API stability monitoring</span>
-                </li>
+              <ul className="space-y-3 flex-1 mb-8">
+                {[
+                  'Up to 3 workflow builds/month',
+                  'n8n, Zapier, or Python',
+                  'API integrations & connections',
+                  'Setup documentation',
+                  '14-day post-launch support',
+                  'Priority email support',
+                ].map((item) => (
+                  <li key={item} className="flex items-start gap-3">
+                    <CheckCircle2 className="w-4 h-4 text-purple-400 flex-shrink-0 mt-0.5" />
+                    <span className="text-slate-300 text-sm">{item}</span>
+                  </li>
+                ))}
               </ul>
-              <div className="flex-grow"></div>
-              <a href="https://calendly.com/automathub/30min" className="block w-full py-3 bg-slate-700 hover:bg-slate-600 rounded-lg font-semibold text-center transition-colors border border-slate-600">
+              <a href="https://calendly.com/automathub/30min" className="block w-full py-3 bg-slate-700 hover:bg-slate-600 border border-slate-600 rounded-lg font-semibold text-center transition-colors text-sm">
                 Get Started
               </a>
             </div>
 
-            {/* Tier 3: Pro */}
-            <div className="p-8 bg-gradient-to-br from-indigo-500/10 to-purple-500/10 border-2 border-indigo-500/50 rounded-xl hover:border-indigo-500/70 transition-all relative flex flex-col backdrop-blur-sm">
-              <div className="absolute -top-4 left-1/2 -translate-x-1/2">
+            {/* Tier 3: Scale — Most Popular */}
+            <div className="relative p-8 bg-gradient-to-br from-indigo-500/10 to-purple-500/10 border-2 border-indigo-500/60 rounded-xl flex flex-col backdrop-blur-sm shadow-xl shadow-indigo-500/10">
+              <div className="absolute -top-4 left-1/2 -translate-x-1/2 whitespace-nowrap">
+                <span className="px-4 py-1.5 bg-gradient-to-r from-indigo-600 to-purple-600 rounded-full text-xs font-bold tracking-wide shadow-lg shadow-indigo-500/40">
+                  MOST POPULAR
+                </span>
               </div>
               <div className="mb-6">
-                <h3 className="text-xl font-bold mb-2">Pro</h3>
-                <div className="flex items-baseline gap-1 mb-1">
-                  <span className="text-4xl font-bold">$55.99</span>
-                  <span className="text-slate-500 text-sm">– $79.99</span>
+                <p className="text-xs font-semibold uppercase tracking-widest text-slate-400 mb-3">Scale</p>
+                <div className="flex items-end gap-1 mb-1">
+                  <span className="text-5xl font-extrabold">$399</span>
+                  <span className="text-slate-400 text-sm mb-2">/month</span>
                 </div>
-                <p className="text-indigo-300 text-sm font-medium">Annual Oversight</p>
+                <p className="text-indigo-300 text-sm font-medium">Full Automation Partner</p>
               </div>
-              <p className="text-slate-200 leading-relaxed mb-6 text-sm">
-                12 months of proactive system monitoring and security updates.
+              <p className="text-slate-300 text-sm leading-relaxed mb-6">
+                For businesses that want automation as a continuous advantage — not a one-off project.
               </p>
-              <ul className="space-y-3 mb-8">
-                <li className="flex items-start gap-3">
-                  <CheckCircle2 className="w-4 h-4 text-indigo-400 flex-shrink-0 mt-0.5" />
-                  <span className="text-slate-200 text-sm">12-month coverage</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <CheckCircle2 className="w-4 h-4 text-indigo-400 flex-shrink-0 mt-0.5" />
-                  <span className="text-slate-200 text-sm">Proactive monitoring</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <CheckCircle2 className="w-4 h-4 text-indigo-400 flex-shrink-0 mt-0.5" />
-                  <span className="text-slate-200 text-sm">Security updates</span>
-                </li>
+              <ul className="space-y-3 flex-1 mb-8">
+                {[
+                  'Unlimited workflow builds',
+                  'Custom Python scripting',
+                  'Proactive monitoring & fixes',
+                  '24-hour support response',
+                  'Monthly strategy call',
+                  'API update management',
+                  'Full documentation',
+                ].map((item) => (
+                  <li key={item} className="flex items-start gap-3">
+                    <CheckCircle2 className="w-4 h-4 text-indigo-400 flex-shrink-0 mt-0.5" />
+                    <span className="text-slate-200 text-sm">{item}</span>
+                  </li>
+                ))}
               </ul>
-              <div className="flex-grow"></div>
-              <a href="https://calendly.com/automathub/30min" className="block w-full py-3 bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 rounded-lg font-semibold text-center transition-all shadow-lg shadow-indigo-500/50">
+              <a href="https://calendly.com/automathub/30min" className="block w-full py-3 bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 rounded-lg font-semibold text-center transition-all shadow-lg shadow-indigo-500/40 text-sm">
                 Get Started
               </a>
             </div>
@@ -442,50 +452,49 @@ export default function Home() {
             {/* Tier 4: Enterprise */}
             <div className="p-8 bg-slate-800/40 border border-cyan-500/20 rounded-xl hover:border-cyan-500/40 transition-all flex flex-col backdrop-blur-sm">
               <div className="mb-6">
-                <h3 className="text-xl font-bold mb-2">Enterprise</h3>
-                <div className="flex items-baseline gap-1 mb-1">
-                  <span className="text-4xl font-bold">$99</span>
-                  <span className="text-slate-500 text-sm">– $800+</span>
+                <p className="text-xs font-semibold uppercase tracking-widest text-slate-400 mb-3">Enterprise</p>
+                <div className="flex items-end gap-1 mb-1">
+                  <span className="text-5xl font-extrabold">$799</span>
+                  <span className="text-slate-400 text-sm mb-2">/month+</span>
                 </div>
-                <p className="text-cyan-300 text-sm font-medium">Custom Engineering</p>
+                <p className="text-cyan-300 text-sm font-medium">Dedicated Engineering</p>
               </div>
-              <p className="text-slate-300 leading-relaxed mb-6 text-sm">
-                Dedicated Python builds and complex n8n infrastructure projects.
+              <p className="text-slate-400 text-sm leading-relaxed mb-6">
+                Large-scale infrastructure builds and dedicated capacity for complex, evolving systems.
               </p>
-              <ul className="space-y-3 mb-8">
-                <li className="flex items-start gap-3">
-                  <CheckCircle2 className="w-4 h-4 text-cyan-400 flex-shrink-0 mt-0.5" />
-                  <span className="text-slate-300 text-sm">Custom Python development</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <CheckCircle2 className="w-4 h-4 text-cyan-400 flex-shrink-0 mt-0.5" />
-                  <span className="text-slate-300 text-sm">Complex n8n infrastructure</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <CheckCircle2 className="w-4 h-4 text-cyan-400 flex-shrink-0 mt-0.5" />
-                  <span className="text-slate-300 text-sm">Dedicated engineering team</span>
-                </li>
+              <ul className="space-y-3 flex-1 mb-8">
+                {[
+                  'Dedicated engineering capacity',
+                  'Full infrastructure design',
+                  'Custom Python development',
+                  'SLA guarantees',
+                  'Direct Slack channel',
+                  'Onboarding & training',
+                  'Custom contract & terms',
+                ].map((item) => (
+                  <li key={item} className="flex items-start gap-3">
+                    <CheckCircle2 className="w-4 h-4 text-cyan-400 flex-shrink-0 mt-0.5" />
+                    <span className="text-slate-300 text-sm">{item}</span>
+                  </li>
+                ))}
               </ul>
-              <div className="flex-grow"></div>
-              <a href="https://calendly.com/automathub/30min" className="block w-full py-3 bg-slate-700 hover:bg-slate-600 rounded-lg font-semibold text-center transition-colors border border-slate-600">
-                Contact Sales
+              <a href="https://calendly.com/automathub/30min" className="block w-full py-3 bg-slate-700 hover:bg-slate-600 border border-slate-600 rounded-lg font-semibold text-center transition-colors text-sm">
+                Book a Call
               </a>
             </div>
-          </div>
-          
-          <div className="mt-8 text-center">
-            <p className="text-slate-400 text-sm mb-2">
-           💱 <strong className="text-white">Multiple currencies accepted:</strong> USD • EUR • GBP • DKK
-            </p>
-           <p className="text-slate-500 text-xs">
-               Prices shown in USD. Pay in your preferred currency at checkout.
-            </p>
+
           </div>
 
-          {/* Pricing Note */}
-          <div className="mt-12 p-6 bg-indigo-500/5 border border-indigo-500/30 rounded-xl max-w-3xl mx-auto backdrop-blur-sm">
-            <p className="text-slate-300 text-sm text-center leading-relaxed">
-              Service retainers cover implementation and maintenance of custom automation projects. Pricing varies based on technical complexity and infrastructure requirements.
+          <div className="mt-8 text-center">
+            <p className="text-slate-400 text-sm mb-2">
+              <strong className="text-white">Multiple currencies accepted:</strong> USD · EUR · GBP · DKK
+            </p>
+            <p className="text-slate-500 text-xs">Prices shown in USD. Pay in your preferred currency at checkout.</p>
+          </div>
+
+          <div className="mt-12 p-6 bg-indigo-500/5 border border-indigo-500/20 rounded-xl max-w-3xl mx-auto backdrop-blur-sm text-center">
+            <p className="text-slate-300 text-sm leading-relaxed">
+              Not sure which plan fits? <a href="https://calendly.com/automathub/30min" className="text-indigo-300 hover:text-white underline underline-offset-2 transition-colors">Book a free 30-minute call</a> and we'll recommend the right starting point for your stack.
             </p>
           </div>
         </div>
