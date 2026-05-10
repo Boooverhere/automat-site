@@ -1,5 +1,7 @@
 import { NextResponse } from 'next/server';
-import supabase from '@/lib/supabase';
+import getSupabase from '@/lib/supabase';
+
+export const dynamic = 'force-dynamic';
 
 export async function POST(req) {
   const body = await req.json();
@@ -9,7 +11,7 @@ export async function POST(req) {
     return NextResponse.json({ error: 'Missing required fields' }, { status: 400 });
   }
 
-  const { error } = await supabase
+  const { error } = await getSupabase()
     .from('website_briefs')
     .insert({
       name,
