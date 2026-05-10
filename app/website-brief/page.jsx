@@ -63,10 +63,10 @@ export default function WebsiteBriefPage() {
     e.preventDefault();
     setStatus('sending');
     try {
-      const res = await fetch('https://formspree.io/f/xbljarvo', {
+      const res = await fetch('/api/website-brief', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
-        body: JSON.stringify({ ...form, _subject: `Website Brief — ${form.businessName || 'New Enquiry'}` }),
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(form),
       });
       setStatus(res.ok ? 'success' : 'error');
     } catch {
