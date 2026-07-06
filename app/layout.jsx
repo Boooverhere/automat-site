@@ -87,7 +87,7 @@ export default function RootLayout({ children }) {
               url: 'https://automathub.com',
               logo: 'https://automathub.com/AutomatHub-logo.svg',
               description: 'Technical automation consultancy specializing in Python-based automation, API engineering, and custom workflow design for enterprise systems.',
-              email: 'contact@automathub.com',
+              email: 'elyoussefimehdi@gmail.com',
               sameAs: [
                 'https://github.com/boooverhere',
                 'https://linkedin.com/in/elyoussoufimehdi',

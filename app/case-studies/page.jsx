@@ -607,7 +607,7 @@ export default function CaseStudies() {
               View Service Retainers
             </Link>
             <a 
-              href="mailto:hello@automat.com"
+              href="mailto:elyoussefimehdi@gmail.com"
               className="px-8 py-4 bg-slate-800 hover:bg-slate-700 border border-indigo-500/30 rounded-lg font-semibold text-lg transition-colors"
             >
               Schedule Consultation
@@ -671,8 +671,8 @@ export default function CaseStudies() {
             <div>
               <h4 className="font-semibold mb-4 text-sm">Contact</h4>
               <p className="text-slate-400 text-sm">
-                <a href="mailto:contact@automathub.com" className="hover:text-white transition-colors">
-                  contact@automathub.com
+                <a href="mailto:elyoussefimehdi@gmail.com" className="hover:text-white transition-colors">
+                  elyoussefimehdi@gmail.com
                 </a>
               </p>
               <p className="text-slate-500 text-xs mt-2">

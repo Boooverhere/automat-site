@@ -1,4 +1,4 @@
-import { Check, Zap, Github, Linkedin, Twitter, Code, Settings, Shield, Mail, ArrowRight, CheckCircle2, FileText, TrendingUp, Database, Globe, Sparkles } from 'lucide-react';
+import { Check, Zap, Github, Linkedin, Twitter, Code, Settings, Shield, Mail, ArrowRight, CheckCircle2, FileText, TrendingUp, Database, Globe, Sparkles, Package, ExternalLink, Repeat } from 'lucide-react';
 import Link from 'next/link';
 
 export const metadata = {
@@ -14,7 +14,7 @@ const jsonLd = {
   url: 'https://automathub.com',
   logo: 'https://automathub.com/AutomatHub-logo.svg',
   description: 'Technical automation consultancy specializing in Python-based automation, API engineering, and custom workflow design for enterprise systems.',
-  email: 'contact@automathub.com',
+  email: 'elyoussefimehdi@gmail.com',
   priceRange: '$14.99 - $800+',
   hasOfferCatalog: {
     '@type': 'OfferCatalog',
@@ -56,6 +56,69 @@ const jsonLd = {
     { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Ongoing Maintenance Retainers' } },
   ],
 };
+
+const digitalProducts = [
+  {
+    name: 'Lead Scraper Workflow (n8n)',
+    description: 'A ready-to-import n8n workflow for pulling and organizing lead data automatically, so you skip building the scraping logic from scratch.',
+    type: 'One-time',
+    slug: 'lead-scraper-workflow-n8n',
+  },
+  {
+    name: 'Cold Outreach Pack — Tradesmen',
+    description: 'Outreach templates and sequences built for trades businesses looking to book more jobs through cold email and messaging.',
+    type: 'One-time',
+    slug: 'cold-outreach-pack-tradesmen',
+  },
+  {
+    name: 'Self-Hosted n8n Setup Guide',
+    description: 'Step-by-step guide to self-hosting your own n8n instance, so you own your automation infrastructure instead of renting it.',
+    type: 'One-time',
+    slug: 'self-hosted-n8n-setup-guide',
+  },
+  {
+    name: 'Automation Starter Bundle',
+    description: 'A bundle of foundational automation assets to get your first workflows running quickly without a custom build.',
+    type: 'One-time',
+    slug: 'automation-starter-bundle',
+  },
+  {
+    name: 'AI Blog Automation Pipeline',
+    description: 'An end-to-end pipeline for generating and publishing blog content on autopilot using AI.',
+    type: 'One-time',
+    slug: 'ai-blog-automation-pipeline',
+  },
+  {
+    name: 'Self-Sorting Freelancer CRM (Notion)',
+    description: 'A Notion-based CRM template that keeps client work organized automatically as you update it — no extra admin.',
+    type: 'One-time',
+    slug: 'the-self-sorting-freelancer-crm-notion-your-clients-organize-themselves',
+  },
+  {
+    name: 'AutomatHub AI Script Access',
+    description: 'Ongoing access to a maintained AI automation script, updated over the course of your subscription.',
+    type: 'Subscription',
+    slug: '3-mo-access-automating-hub-ai-script',
+  },
+  {
+    name: 'Google Sheets Automation Script',
+    description: 'A subscription script that keeps your Google Sheets synced and updated automatically, with ongoing maintenance included.',
+    type: 'Subscription',
+    slug: '1-mo-sub0-script-gsheet',
+  },
+  {
+    name: 'n8n Support Plan',
+    description: 'A support subscription for teams running n8n who want ongoing help keeping workflows healthy.',
+    type: 'Subscription',
+    slug: '6mo-sub-medsup',
+  },
+  {
+    name: 'Premium Automation Bundle',
+    description: 'Our most complete bundle of automation tools and scripts, with extended access for ongoing use.',
+    type: 'Subscription',
+    slug: '12-mosub-bundle-premium',
+  },
+];
 
 export default function Home() {
   return (
@@ -500,6 +563,62 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Digital Products Section */}
+      <section id="products" className="py-20 px-6 border-y border-indigo-500/10 bg-slate-900/30">
+        <div className="container mx-auto max-w-6xl">
+          <div className="mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-white to-slate-300 bg-clip-text text-transparent">Digital Products</h2>
+            <p className="text-xl text-slate-300">Ready-made scripts, workflows, and templates you can buy and use today — no consultation required.</p>
+          </div>
+
+          <div className="mb-12 inline-flex items-center gap-2 px-4 py-2 bg-amber-500/10 border border-amber-500/20 rounded-full text-sm text-amber-300">
+            <Package className="w-4 h-4" />
+            Sold and fulfilled through our Whop store. Checkout, pricing, and updates happen there.
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {digitalProducts.map((product) => (
+              <div
+                key={product.slug}
+                className="p-6 bg-slate-800/40 border border-amber-500/20 rounded-xl hover:border-amber-500/40 transition-all backdrop-blur-sm flex flex-col"
+              >
+                <div className="flex items-center gap-2 mb-3">
+                  {product.type === 'Subscription' ? (
+                    <Repeat className="w-4 h-4 text-amber-400" />
+                  ) : (
+                    <Package className="w-4 h-4 text-amber-400" />
+                  )}
+                  <span className="text-xs font-mono text-amber-300 uppercase tracking-wider">{product.type}</span>
+                </div>
+                <h3 className="text-lg font-bold mb-2">{product.name}</h3>
+                <p className="text-slate-400 text-sm leading-relaxed mb-6 flex-1">{product.description}</p>
+                <a
+                  href={`https://whop.com/joined/automathub/products/${product.slug}/`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center gap-2 w-full py-2.5 bg-slate-700 hover:bg-amber-600/80 border border-slate-600 hover:border-amber-500/60 rounded-lg font-medium text-center transition-all text-sm"
+                >
+                  View on Whop
+                  <ExternalLink className="w-3.5 h-3.5" />
+                </a>
+              </div>
+            ))}
+          </div>
+
+          <div className="mt-10 text-center">
+            <a
+              href="https://whop.com/joined/automathub/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-amber-600 to-orange-600 hover:from-amber-500 hover:to-orange-500 rounded-lg font-semibold text-lg transition-all shadow-lg shadow-amber-500/30"
+            >
+              Browse the Full Store on Whop
+              <ArrowRight className="w-5 h-5" />
+            </a>
+          </div>
+        </div>
+      </section>
+
       {/* Compliance Section */}
       <section className="py-20 px-6 border-y border-indigo-500/10 bg-slate-900/30">
         <div className="container mx-auto max-w-4xl">
@@ -511,9 +630,11 @@ export default function Home() {
               <div>
                 <h3 className="text-xl font-bold mb-3">Intellectual Property & Compliance</h3>
                 <p className="text-slate-300 leading-relaxed">
-                  All code delivered is original and proprietary. We provide professional services and custom implementations; 
-                  we do not resell third-party software licenses. Every automation solution is built from the ground up to meet 
-                  your specific requirements, ensuring full compliance and ownership rights.
+                  Custom client engagements — retainers and one-off builds — are always original, proprietary work built from
+                  the ground up for your specific requirements, with full compliance and ownership rights; we do not resell
+                  third-party software licenses as part of these engagements. Our digital products (scripts, workflows, and
+                  templates sold via Whop) are separate, standalone tools sold as-is for self-implementation and are not
+                  covered by this custom-engineering guarantee.
                 </p>
               </div>
             </div>
@@ -610,11 +731,11 @@ export default function Home() {
             
             <div className="bg-slate-800/40 border border-indigo-500/20 rounded-xl p-8 max-w-2xl mx-auto backdrop-blur-sm">
               <a 
-                href="mailto:contact@automathub.com" 
+                href="mailto:elyoussefimehdi@gmail.com" 
                 className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 rounded-lg font-semibold text-lg transition-all shadow-lg shadow-indigo-500/50 mb-6"
               >
                 <Mail className="w-5 h-5" />
-                contact@automathub.com
+                elyoussefimehdi@gmail.com
               </a>
               
               <div className="mt-6 pt-6 border-t border-indigo-500/20">

@@ -423,7 +423,7 @@ export default function WebsiteBriefPage() {
                   </div>
 
                   {status === 'error' && (
-                    <p className="text-red-400 text-sm">Something went wrong. Email us directly at contact@automathub.com</p>
+                    <p className="text-red-400 text-sm">Something went wrong. Email us directly at elyoussefimehdi@gmail.com</p>
                   )}
                 </div>
               )}

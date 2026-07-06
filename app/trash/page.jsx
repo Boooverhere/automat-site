@@ -387,11 +387,11 @@ export default function Home() {
             
             <div className="bg-slate-800/40 border border-slate-700/50 rounded-2xl p-8 max-w-2xl mx-auto">
               <a 
-                href="mailto:hello@automat.com" 
+                href="mailto:elyoussefimehdi@gmail.com" 
                 className="inline-flex items-center gap-2 px-8 py-4 bg-indigo-600 hover:bg-indigo-700 rounded-lg font-semibold text-lg transition-all hover:shadow-lg hover:shadow-indigo-500/50 mb-6"
               >
                 <Mail className="w-5 h-5" />
-                hello@automat.com
+                elyoussefimehdi@gmail.com
               </a>
               
               <div className="mt-6 pt-6 border-t border-slate-700/50">
@@ -439,8 +439,8 @@ export default function Home() {
             <div>
               <h4 className="font-semibold mb-4">Contact</h4>
               <p className="text-slate-400">
-                <a href="mailto:hello@automat.com" className="hover:text-white transition-colors">
-                  hello@automat.com
+                <a href="mailto:elyoussefimehdi@gmail.com" className="hover:text-white transition-colors">
+                  elyoussefimehdi@gmail.com
                 </a>
               </p>
               <p className="text-slate-400 text-sm mt-2">
