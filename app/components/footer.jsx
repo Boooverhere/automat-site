@@ -18,7 +18,7 @@ export default function Footer() {
           />
         </div>
         <p className="text-slate-400 text-sm mb-4">
-          Technical automation consultancy for enterprise systems.
+          Automation for home-service &amp; trades businesses.
         </p>
         
         {/* Social Media Links */}
@@ -54,7 +54,7 @@ export default function Footer() {
           </a>
           
           <a 
-            href="mailto:elyoussefimehdi@gmail.com"
+            href="mailto:hello@automathub.com"
             className="w-9 h-9 bg-slate-800 hover:bg-slate-700 border border-slate-700 hover:border-indigo-500 rounded-lg flex items-center justify-center transition-all group"
             aria-label="Email"
           >
@@ -74,7 +74,7 @@ export default function Footer() {
             <a href="#services" className="hover:text-white transition-colors">Workflow Design</a>
           </li>
           <li>
-            <Link href="/case-studies" className="hover:text-white transition-colors">Case Studies</Link>
+            <Link href="/case-studies" className="hover:text-white transition-colors">Projects</Link>
           </li>
         </ul>
       </div>
@@ -99,8 +99,8 @@ export default function Footer() {
       <div>
         <h4 className="font-semibold mb-4 text-sm">Contact</h4>
         <p className="text-slate-400 text-sm mb-2">
-          <a href="mailto:elyoussefimehdi@gmail.com" className="hover:text-white transition-colors">
-            elyoussefimehdi@gmail.com
+          <a href="mailto:hello@automathub.com" className="hover:text-white transition-colors">
+            hello@automathub.com
           </a>
         </p>
         <p className="text-slate-500 text-xs mb-4">

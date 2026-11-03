@@ -77,13 +77,13 @@ export default function ContactPage() {
               <h2 className="text-lg font-semibold mb-4 text-white">Contact Details</h2>
               <div className="space-y-4">
                 <a
-                  href="mailto:elyoussefimehdi@gmail.com"
+                  href="mailto:hello@automathub.com"
                   className="flex items-center gap-3 text-slate-300 hover:text-white transition-colors"
                 >
                   <div className="w-9 h-9 bg-slate-800 border border-slate-700 rounded-lg flex items-center justify-center flex-shrink-0">
                     <Mail className="w-4 h-4 text-indigo-400" />
                   </div>
-                  elyoussefimehdi@gmail.com
+                  hello@automathub.com
                 </a>
                 <div className="flex items-center gap-3 text-slate-400">
                   <div className="w-9 h-9 bg-slate-800 border border-slate-700 rounded-lg flex items-center justify-center flex-shrink-0">
@@ -211,7 +211,7 @@ export default function ContactPage() {
                 </div>
 
                 {status === 'error' && (
-                  <p className="text-red-400 text-sm">Something went wrong. Try emailing us directly at elyoussefimehdi@gmail.com</p>
+                  <p className="text-red-400 text-sm">Something went wrong. Try emailing us directly at hello@automathub.com</p>
                 )}
 
                 <button

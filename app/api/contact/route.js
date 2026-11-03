@@ -1,5 +1,6 @@
 import { NextResponse } from 'next/server';
 import getSupabase from '@/lib/supabase';
+import { notifyNewSubmission } from '@/lib/notify';
 
 export const dynamic = 'force-dynamic';
 
@@ -18,6 +19,17 @@ export async function POST(req) {
     console.error('Supabase error:', error);
     return NextResponse.json({ error: 'Failed to save submission' }, { status: 500 });
   }
+
+  await notifyNewSubmission({
+    subject: `New contact message from ${name || email}`,
+    replyTo: email,
+    fields: [
+      ['Name', name],
+      ['Email', email],
+      ['Service', service],
+      ['Message', message],
+    ],
+  });
 
   return NextResponse.json({ success: true });
 }

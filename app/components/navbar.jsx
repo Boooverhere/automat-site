@@ -25,7 +25,7 @@ export default function Navbar() {
           <div className="hidden md:flex items-center space-x-8">
             <a href="/#services" className="text-slate-300 hover:text-white transition-colors">Services</a>
             <a href="/#process" className="text-slate-300 hover:text-white transition-colors">Process</a>
-            <Link href="/case-studies" className="text-slate-300 hover:text-white transition-colors">Case Studies</Link>
+            <Link href="/case-studies" className="text-slate-300 hover:text-white transition-colors">Projects</Link>
             <a href="/#pricing" className="text-slate-300 hover:text-white transition-colors">Pricing</a>
             <a href="/#products" className="text-amber-400 hover:text-amber-300 transition-colors font-medium">Products</a>
             <a href="/#web-design" className="text-emerald-400 hover:text-emerald-300 transition-colors font-medium">Websites</a>
@@ -49,7 +49,7 @@ export default function Navbar() {
             <div className="flex flex-col space-y-4">
               <a href="/#services" className="text-slate-300 hover:text-white transition-colors">Services</a>
               <a href="/#process" className="text-slate-300 hover:text-white transition-colors">Process</a>
-              <Link href="/case-studies" className="text-slate-300 hover:text-white transition-colors">Case Studies</Link>
+              <Link href="/case-studies" className="text-slate-300 hover:text-white transition-colors">Projects</Link>
               <a href="/#pricing" className="text-slate-300 hover:text-white transition-colors">Pricing</a>
               <a href="/#products" className="text-amber-400 hover:text-amber-300 transition-colors font-medium">Products</a>
               <a href="/#web-design" className="text-emerald-400 hover:text-emerald-300 transition-colors font-medium">Websites</a>

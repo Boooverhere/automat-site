@@ -85,7 +85,7 @@ export default function Refunds() {
             </p>
             <ol className="list-decimal list-inside text-slate-300 space-y-3 ml-4">
               <li className="leading-relaxed">
-                <strong>Contact:</strong> Email elyoussefimehdi@gmail.com with "Refund Request" in the subject line
+                <strong>Contact:</strong> Email hello@automathub.com with "Refund Request" in the subject line
               </li>
               <li className="leading-relaxed">
                 <strong>Include:</strong> Account information, service tier, date of purchase, and reason for cancellation
@@ -124,7 +124,7 @@ export default function Refunds() {
               For maintenance retainers (Tier 3 and applicable Tier 4 contracts):
             </p>
             <ul className="list-disc list-inside text-slate-300 space-y-2 ml-4">
-              <li>Cancellation requests must be submitted in writing to elyoussefimehdi@gmail.com</li>
+              <li>Cancellation requests must be submitted in writing to hello@automathub.com</li>
               <li>Cancellation is effective at the end of the current billing period unless otherwise specified</li>
               <li>Pro-rated refunds for prepaid annual retainers are calculated based on complete unused months</li>
               <li>Cancelled services remain active until the end of the paid period</li>
@@ -170,8 +170,8 @@ export default function Refunds() {
             <div className="bg-slate-800/30 border border-slate-700/50 rounded-lg p-6 mt-4">
               <p className="text-slate-300">
                 <strong className="text-white">Email:</strong>{' '}
-                <a href="mailto:elyoussefimehdi@gmail.com" className="text-slate-400 hover:text-white transition-colors">
-                  elyoussefimehdi@gmail.com
+                <a href="mailto:hello@automathub.com" className="text-slate-400 hover:text-white transition-colors">
+                  hello@automathub.com
                 </a>
               </p>
               <p className="text-slate-400 text-sm mt-2">

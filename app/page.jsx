@@ -2,8 +2,8 @@ import { Check, Zap, Github, Linkedin, Twitter, Code, Settings, Shield, Mail, Ar
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'Custom Workflow Automation & API Engineering Services',
-  description: 'Professional Python-based automation, API integration, and technical consulting for enterprises. Custom n8n workflows, system monitoring, and ongoing maintenance retainers.',
+  title: { absolute: 'Automat | Automation for Home-Service & Trades Businesses' },
+  description: 'Automations for plumbers, electricians, HVAC, roofers, cleaners and other home-service businesses: instant lead replies, quote follow-ups, booking reminders and review requests. Free 30-minute audit call.',
   alternates: { canonical: 'https://automathub.com' },
 };
 
@@ -13,40 +13,45 @@ const jsonLd = {
   name: 'Automat',
   url: 'https://automathub.com',
   logo: 'https://automathub.com/AutomatHub-logo.svg',
-  description: 'Technical automation consultancy specializing in Python-based automation, API engineering, and custom workflow design for enterprise systems.',
-  email: 'elyoussefimehdi@gmail.com',
-  priceRange: '$14.99 - $800+',
+  description: 'Technical automation consultancy specializing in Python-based automation, API engineering, and lead follow-up and admin automation for home-service and trades businesses.',
+  email: 'hello@automathub.com',
+  priceRange: '$49 - $799+',
+  founder: { '@type': 'Person', name: 'Mehdi Elyoussoufi' },
   hasOfferCatalog: {
     '@type': 'OfferCatalog',
     name: 'Automation Service Retainers',
     itemListElement: [
       {
         '@type': 'Offer',
-        name: 'Entry – Logic & Script Audits',
-        description: 'One-time review of automation settings or single-script health checks.',
-        price: '14.99',
+        name: 'Starter – Audit & Health Check',
+        description: '1 workflow or script audit per month with a written report and fix recommendations.',
+        price: '49.00',
         priceCurrency: 'USD',
+        priceSpecification: { '@type': 'UnitPriceSpecification', price: '49.00', priceCurrency: 'USD', unitText: 'MONTH' },
       },
       {
         '@type': 'Offer',
-        name: 'Standard – Operational Retainer',
-        description: 'Quarterly maintenance for small business workflows and API stability.',
-        price: '39.00',
+        name: 'Build – Active Automation',
+        description: 'Up to 3 workflow builds per month in n8n, Zapier, or Python, with API integrations.',
+        price: '199.00',
         priceCurrency: 'USD',
+        priceSpecification: { '@type': 'UnitPriceSpecification', price: '199.00', priceCurrency: 'USD', unitText: 'MONTH' },
       },
       {
         '@type': 'Offer',
-        name: 'Pro – Annual Oversight',
-        description: '12 months of proactive system monitoring and security updates.',
-        price: '55.99',
+        name: 'Scale – Full Automation Partner',
+        description: 'Unlimited workflow builds, custom Python scripting, proactive monitoring, and a monthly strategy call.',
+        price: '399.00',
         priceCurrency: 'USD',
+        priceSpecification: { '@type': 'UnitPriceSpecification', price: '399.00', priceCurrency: 'USD', unitText: 'MONTH' },
       },
       {
         '@type': 'Offer',
-        name: 'Enterprise – Custom Engineering',
-        description: 'Full-scale custom automation engineering and API integration for enterprise systems.',
-        price: '99.00',
+        name: 'Enterprise – Dedicated Engineering',
+        description: 'Dedicated engineering capacity, infrastructure design, and SLA guarantees.',
+        price: '799.00',
         priceCurrency: 'USD',
+        priceSpecification: { '@type': 'UnitPriceSpecification', price: '799.00', priceCurrency: 'USD', unitText: 'MONTH' },
       },
     ],
   },
@@ -131,38 +136,42 @@ export default function Home() {
           <div className="text-center space-y-8">
             <div className="inline-block">
               <span className="px-4 py-2 bg-indigo-500/10 border border-indigo-500/30 rounded-full text-indigo-300 text-sm font-medium">
-                Technical Automation Consultancy
+                Automation for Home-Service &amp; Trades Businesses
               </span>
             </div>
             
             <h1 className="text-5xl md:text-7xl font-bold tracking-tight leading-tight">
               <span className="bg-gradient-to-r from-white to-slate-200 bg-clip-text text-transparent">
-                Custom Workflow Automation
+                More Booked Jobs.
               </span>
               <br />
               <span className="text-slate-300">
-                & API Engineering
+                Less Admin.
               </span>
             </h1>
             
             <p className="text-xl md:text-2xl text-slate-300 max-w-3xl mx-auto leading-relaxed">
-              We build and maintain proprietary Python-based automations for modern enterprises.
+              I&apos;m Mehdi. I build automations for plumbers, electricians, HVAC, roofers, cleaners and other home-service businesses,
+              so every lead gets an instant reply, every quote gets followed up, and you spend your evenings off instead of on paperwork.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center pt-8">
               <a 
-                href="#pricing" 
+                href="https://calendly.com/automathub/30min" 
                 className="px-8 py-4 bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 rounded-lg font-semibold text-lg transition-all shadow-lg shadow-indigo-500/50"
               >
-                View Service Retainers
+                Book a Free Automation Audit
               </a>
-              <Link 
-                href="/case-studies" 
+              <a 
+                href="#pricing" 
                 className="px-8 py-4 bg-slate-800 hover:bg-slate-700 border border-indigo-500/30 rounded-lg font-semibold text-lg transition-colors"
               >
-                Technical Reports
-              </Link>
+                See Pricing
+              </a>
             </div>
+            <p className="text-sm text-slate-400">
+              30-minute call. I&apos;ll map out what in your business can be automated, whether or not you hire me.
+            </p>
           </div>
         </div>
       </section>
@@ -171,8 +180,8 @@ export default function Home() {
       <section id="services" className="py-20 px-6 border-y border-indigo-500/10 bg-slate-900/30">
         <div className="container mx-auto max-w-6xl">
           <div className="mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-white to-slate-300 bg-clip-text text-transparent">Technical Capabilities</h2>
-            <p className="text-xl text-slate-300">Specialized automation services for enterprise systems</p>
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-white to-slate-300 bg-clip-text text-transparent">What I Automate</h2>
+            <p className="text-xl text-slate-300">The admin that costs trades businesses jobs, handled automatically</p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
@@ -181,9 +190,9 @@ export default function Home() {
               <div className="w-12 h-12 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-lg flex items-center justify-center mb-6 shadow-lg shadow-indigo-500/30">
                 <Code className="w-6 h-6 text-white" />
               </div>
-              <h3 className="text-2xl font-bold mb-4">Custom Integrations</h3>
+              <h3 className="text-2xl font-bold mb-4">Never Miss a Lead</h3>
               <p className="text-slate-300 leading-relaxed">
-                Specialized Python scripts and API connections designed specifically for your infrastructure and business logic.
+                Instant text or email replies to web enquiries and missed calls, with every lead collected in one place (CRM or Google Sheets) so nothing slips through while you&apos;re on a job.
               </p>
             </div>
 
@@ -192,9 +201,9 @@ export default function Home() {
               <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-600 rounded-lg flex items-center justify-center mb-6 shadow-lg shadow-purple-500/30">
                 <Settings className="w-6 h-6 text-white" />
               </div>
-              <h3 className="text-2xl font-bold mb-4">Workflow Design</h3>
+              <h3 className="text-2xl font-bold mb-4">Quotes, Bookings &amp; Reviews</h3>
               <p className="text-slate-300 leading-relaxed">
-                Enterprise-grade n8n and Zapier architecture that scales with your organization's evolving needs.
+                Automatic quote follow-ups, appointment reminders that cut no-shows, and review requests sent after every finished job to build up your Google reviews.
               </p>
             </div>
 
@@ -203,10 +212,44 @@ export default function Home() {
               <div className="w-12 h-12 bg-gradient-to-br from-cyan-500 to-blue-600 rounded-lg flex items-center justify-center mb-6 shadow-lg shadow-cyan-500/30">
                 <Shield className="w-6 h-6 text-white" />
               </div>
-              <h3 className="text-2xl font-bold mb-4">Ongoing Maintenance</h3>
+              <h3 className="text-2xl font-bold mb-4">Set Up &amp; Looked After</h3>
               <p className="text-slate-300 leading-relaxed">
-                Proactive monitoring and API update management to ensure your automations run flawlessly 24/7.
+                I connect the tools you already use, like your calendar, invoicing, Jobber or Housecall Pro, and Gmail, then monitor and fix everything so you never have to touch it.
               </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* About Section */}
+      <section id="about" className="py-20 px-6">
+        <div className="container mx-auto max-w-4xl">
+          <div className="bg-slate-800/50 backdrop-blur-sm border border-indigo-500/20 rounded-2xl p-8 md:p-12 flex flex-col md:flex-row gap-8 items-center md:items-start">
+            <div className="shrink-0 w-28 h-28 rounded-full bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center text-4xl font-bold shadow-lg shadow-indigo-500/30" aria-hidden="true">
+              ME
+            </div>
+            <div className="space-y-4 text-center md:text-left">
+              <h2 className="text-3xl md:text-4xl font-bold">Hi, I&apos;m Mehdi Elyoussoufi</h2>
+              <p className="text-lg text-slate-300 leading-relaxed">
+                I&apos;m the engineer behind Automat. When you work with me, you deal directly with the person building your
+                systems: no account managers and no tech jargon.
+              </p>
+              <p className="text-lg text-slate-300 leading-relaxed">
+                Most trades businesses don&apos;t lose jobs because of bad work. They lose them because a call went unanswered, a quote
+                was never followed up, or the owner was too busy on site to reply. I build the systems (with n8n, Zapier, and Python)
+                that handle that follow-up for you, and I keep them running.
+              </p>
+              <div className="flex flex-wrap gap-4 justify-center md:justify-start pt-2">
+                <a href="https://calendly.com/automathub/30min" className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 rounded-lg font-semibold transition-all">
+                  Book a Free Audit <ArrowRight className="w-4 h-4" />
+                </a>
+                <a href="https://linkedin.com/in/elyoussoufimehdi" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-6 py-3 bg-slate-800 hover:bg-slate-700 border border-indigo-500/30 rounded-lg font-semibold transition-colors">
+                  <Linkedin className="w-4 h-4" /> LinkedIn
+                </a>
+                <a href="https://github.com/boooverhere" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-6 py-3 bg-slate-800 hover:bg-slate-700 border border-indigo-500/30 rounded-lg font-semibold transition-colors">
+                  <Github className="w-4 h-4" /> GitHub
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -229,7 +272,7 @@ export default function Home() {
                 </div>
                 <h3 className="text-2xl font-bold mb-4">Consultation</h3>
                 <p className="text-slate-300 leading-relaxed">
-                  We analyze your existing workflows, API infrastructure, and automation requirements to design a tailored solution that fits your specific business needs.
+                  I analyze your existing workflows, API infrastructure, and automation requirements to design a tailored solution that fits your specific business needs.
                 </p>
               </div>
             </div>
@@ -242,7 +285,7 @@ export default function Home() {
                 </div>
                 <h3 className="text-2xl font-bold mb-4">Custom Engineering</h3>
                 <p className="text-slate-300 leading-relaxed">
-                  Our team develops proprietary Python scripts, custom API integrations, and n8n workflows built exclusively for your environment—no off-the-shelf solutions.
+                  I develop custom Python scripts, custom API integrations, and n8n workflows built exclusively for your environment—no off-the-shelf solutions.
                 </p>
               </div>
             </div>
@@ -254,7 +297,7 @@ export default function Home() {
               </div>
               <h3 className="text-2xl font-bold mb-4">Deployment & Support</h3>
               <p className="text-slate-300 leading-relaxed">
-                We deploy directly to your environment, provide comprehensive documentation, and deliver ongoing maintenance and support to keep everything running smoothly.
+                I deploy directly to your environment, provide comprehensive documentation, and deliver ongoing maintenance and support to keep everything running smoothly.
               </p>
             </div>
           </div>
@@ -272,8 +315,8 @@ export default function Home() {
       <section className="py-20 px-6 border-y border-indigo-500/10 bg-slate-900/30">
         <div className="container mx-auto max-w-6xl">
           <div className="mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-white to-slate-300 bg-clip-text text-transparent">Technical Case Studies</h2>
-            <p className="text-xl text-slate-300">Implementation reports from recent automation projects</p>
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-white to-slate-300 bg-clip-text text-transparent">Projects I&apos;ve Built</h2>
+            <p className="text-xl text-slate-300">Working automation systems I designed and built myself</p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
@@ -299,14 +342,14 @@ export default function Home() {
                   </div>
                   <div className="flex items-start gap-2">
                     <div className="w-1.5 h-1.5 bg-indigo-400 rounded-full mt-2"></div>
-                    <p className="text-slate-300 text-sm leading-relaxed">99.7% sync accuracy, 4-second average latency</p>
+                    <p className="text-slate-300 text-sm leading-relaxed">Two-way sync with retries and a full audit log</p>
                   </div>
                 </div>
                 <Link 
                   href="/case-studies#inventory-sync"
                   className="block w-full py-2.5 bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 rounded-lg font-medium text-center transition-all text-sm shadow-lg shadow-indigo-500/30"
                 >
-                  Read Full Report →
+                  See How It Works →
                 </Link>
               </div>
             </div>
@@ -333,14 +376,14 @@ export default function Home() {
                   </div>
                   <div className="flex items-start gap-2">
                     <div className="w-1.5 h-1.5 bg-purple-400 rounded-full mt-2"></div>
-                    <p className="text-slate-300 text-sm leading-relaxed">Reduced reporting time from 6 hours to 12 minutes</p>
+                    <p className="text-slate-300 text-sm leading-relaxed">Dashboard ready every morning, no manual CSV exports</p>
                   </div>
                 </div>
                 <Link 
                   href="/case-studies#financial-reporting"
                   className="block w-full py-2.5 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-500 hover:to-pink-500 rounded-lg font-medium text-center transition-all text-sm shadow-lg shadow-purple-500/30"
                 >
-                  Read Full Report →
+                  See How It Works →
                 </Link>
               </div>
             </div>
@@ -367,14 +410,14 @@ export default function Home() {
                   </div>
                   <div className="flex items-start gap-2">
                     <div className="w-1.5 h-1.5 bg-cyan-400 rounded-full mt-2"></div>
-                    <p className="text-slate-300 text-sm leading-relaxed">73% reduction in onboarding completion time</p>
+                    <p className="text-slate-300 text-sm leading-relaxed">OCR pulls key details from signed documents automatically</p>
                   </div>
                 </div>
                 <Link 
                   href="/case-studies#onboarding-system"
                   className="block w-full py-2.5 bg-gradient-to-r from-cyan-600 to-blue-600 hover:from-cyan-500 hover:to-blue-500 rounded-lg font-medium text-center transition-all text-sm shadow-lg shadow-cyan-500/30"
                 >
-                  Read Full Report →
+                  See How It Works →
                 </Link>
               </div>
             </div>
@@ -385,7 +428,7 @@ export default function Home() {
               href="/case-studies"
               className="inline-flex items-center gap-2 text-indigo-300 hover:text-white transition-colors font-medium"
             >
-              View All Technical Reports
+              View All Projects
               <ArrowRight className="w-4 h-4" />
             </Link>
           </div>
@@ -403,7 +446,7 @@ export default function Home() {
           {/* Agency comparison callout */}
           <div className="mb-12 inline-flex items-center gap-2 px-4 py-2 bg-indigo-500/10 border border-indigo-500/20 rounded-full text-sm text-indigo-300">
             <span className="w-2 h-2 rounded-full bg-indigo-400 animate-pulse"></span>
-            Agencies charge $1,500–$5,000/month for the same work. We don't.
+            Agencies charge $1,500–$5,000/month for the same work. I don't.
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 items-stretch">
@@ -451,7 +494,7 @@ export default function Home() {
                 <p className="text-purple-300 text-sm font-medium">Active Automation</p>
               </div>
               <p className="text-slate-400 text-sm leading-relaxed mb-6">
-                Ideal for growing businesses ready to start automating. We build and maintain your workflows.
+                Ideal for growing businesses ready to start automating. I build and maintain your workflows.
               </p>
               <ul className="space-y-3 flex-1 mb-8">
                 {[
@@ -665,7 +708,7 @@ export default function Home() {
                 </h2>
 
                 <p className="text-lg text-slate-300 leading-relaxed mb-6">
-                  Every serious business needs a strong web presence. We design and build custom websites — fast-loading, professional, and built to convert — so you can focus on running your business.
+                  Every serious business needs a strong web presence. I design and build custom websites — fast-loading, professional, and built to convert — so you can focus on running your business.
                 </p>
 
                 <ul className="space-y-3 mb-8 text-slate-300 text-sm">
@@ -726,16 +769,16 @@ export default function Home() {
             <div className="w-12 h-12 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg shadow-indigo-500/50">
               <Mail className="w-6 h-6 text-white" />
             </div>
-            <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-white to-slate-300 bg-clip-text text-transparent">Initiate Consultation</h2>
-            <p className="text-xl text-slate-300 mb-8">Discuss your automation requirements with our technical team</p>
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-white to-slate-300 bg-clip-text text-transparent">Let&apos;s Talk</h2>
+            <p className="text-xl text-slate-300 mb-8">Tell me what&apos;s eating your time. I&apos;ll reply personally.</p>
             
             <div className="bg-slate-800/40 border border-indigo-500/20 rounded-xl p-8 max-w-2xl mx-auto backdrop-blur-sm">
               <a 
-                href="mailto:elyoussefimehdi@gmail.com" 
+                href="mailto:hello@automathub.com" 
                 className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 rounded-lg font-semibold text-lg transition-all shadow-lg shadow-indigo-500/50 mb-6"
               >
                 <Mail className="w-5 h-5" />
-                elyoussefimehdi@gmail.com
+                hello@automathub.com
               </a>
               
               <div className="mt-6 pt-6 border-t border-indigo-500/20">

@@ -1,5 +1,6 @@
 import { NextResponse } from 'next/server';
 import getSupabase from '@/lib/supabase';
+import { notifyNewSubmission } from '@/lib/notify';
 
 export const dynamic = 'force-dynamic';
 
@@ -34,6 +35,27 @@ export async function POST(req) {
     console.error('Supabase error:', error);
     return NextResponse.json({ error: 'Failed to save submission' }, { status: 500 });
   }
+
+  await notifyNewSubmission({
+    subject: `New website brief: ${businessName}`,
+    replyTo: email,
+    fields: [
+      ['Name', name],
+      ['Email', email],
+      ['Business', businessName],
+      ['Industry', industry],
+      ['About the business', businessDesc],
+      ['Site type', siteType],
+      ['Pages', pages],
+      ['Style', style],
+      ['Features', features],
+      ['Has branding', hasBranding],
+      ['Branding notes', brandingNotes],
+      ['Budget', budget],
+      ['Timeline', timeline],
+      ['Extra notes', extraNotes],
+    ],
+  });
 
   return NextResponse.json({ success: true });
 }

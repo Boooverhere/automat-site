@@ -221,8 +221,8 @@ export default function Terms() {
             <h2 className="text-2xl font-bold mb-4 text-white">14. Contact Information</h2>
             <p className="text-slate-200 leading-relaxed">
               For questions about these Terms of Service, please contact us at:{' '}
-              <a href="mailto:elyoussefimehdi@gmail.com" className="text-indigo-400 hover:text-indigo-300 transition-colors">
-                elyoussefimehdi@gmail.com
+              <a href="mailto:hello@automathub.com" className="text-indigo-400 hover:text-indigo-300 transition-colors">
+                hello@automathub.com
               </a>
             </p>
           </section>
