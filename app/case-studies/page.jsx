@@ -588,7 +588,7 @@ export default function CaseStudies() {
               href="/#pricing"
               className="px-8 py-4 bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 rounded-lg font-semibold text-lg transition-all shadow-lg shadow-indigo-500/50"
             >
-              View Service Retainers
+              See Pricing
             </Link>
             <a 
               href="https://calendly.com/automathub/30min"
@@ -600,7 +600,7 @@ export default function CaseStudies() {
 
           <div className="mt-12 pt-8 border-t border-indigo-500/20">
             <p className="text-slate-400 text-sm">
-              All implementations include comprehensive technical documentation, API credentials management, and ongoing maintenance retainers
+              Every build includes documentation, and monthly plans include monitoring and fixes
             </p>
           </div>
         </div>

@@ -189,10 +189,9 @@ export default function ContactPage() {
                     className="w-full px-4 py-3 bg-slate-900/60 border border-slate-700 focus:border-indigo-500 rounded-lg text-white outline-none transition-colors appearance-none"
                   >
                     <option value="" className="text-slate-500">Select a service…</option>
-                    <option value="Custom API Integration">Custom API Integration</option>
-                    <option value="Workflow Automation">Workflow Automation</option>
-                    <option value="Maintenance Retainer">Maintenance Retainer</option>
-                    <option value="Enterprise Consulting">Enterprise Consulting</option>
+                    <option value="Missed-Call Text-Back">Missed-Call Text-Back</option>
+                    <option value="Custom Automation">Custom Automation</option>
+                    <option value="Website">Website</option>
                     <option value="Other">Other</option>
                   </select>
                 </div>
