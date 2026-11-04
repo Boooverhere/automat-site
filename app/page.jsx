@@ -477,8 +477,8 @@ export default function Home() {
               <div>
                 <h3 className="text-xl font-bold mb-3">Intellectual Property & Compliance</h3>
                 <p className="text-slate-300 leading-relaxed">
-                  Every retainer and one-off build is original work, built from the ground up for your business. You own
-                  what I build for you, and I never resell third-party software licenses or &quot;premium&quot; accounts.
+                  Every setup and custom project is original work, built from the ground up for your business. You get a perpetual licence to use and modify
+                  everything I build for you, and I never resell third-party software licenses or &quot;premium&quot; accounts.
                 </p>
               </div>
             </div>

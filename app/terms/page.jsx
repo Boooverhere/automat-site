@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export const metadata = {
   title: 'Terms of Service',
-  description: 'Read the Automat Terms of Service covering service definitions, intellectual property rights, maintenance retainers, payment terms, and client responsibilities.',
+  description: 'Read the Automat Terms of Service covering service definitions, intellectual property rights, monthly service, payment terms, and client responsibilities.',
   alternates: { canonical: 'https://automathub.com/terms' },
   robots: { index: true, follow: true },
 };
@@ -13,7 +13,7 @@ export default function Terms() {
 
       <div className="container mx-auto max-w-4xl px-6 pt-32 pb-20">
         <h1 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-white to-slate-300 bg-clip-text text-transparent">Terms of Service</h1>
-        <p className="text-slate-400 mb-12 text-sm">Last Updated: February 14, 2026</p>
+        <p className="text-slate-400 mb-12 text-sm">Last Updated: November 4, 2026</p>
 
         <div className="prose prose-invert prose-slate max-w-none space-y-8">
           <section>
@@ -29,7 +29,7 @@ export default function Terms() {
             <div className="bg-slate-800/40 border-l-4 border-indigo-500 p-6 rounded backdrop-blur-sm">
               <p className="text-slate-200 leading-relaxed mb-4">
                 Automat provides custom software engineering, API integration, and technical maintenance services. 
-                Our offerings, including "Technical Audits" and "System Oversight Retainers," constitute professional 
+                Our offerings, including the "Missed-Call Text-Back" service and custom automation projects, constitute professional 
                 labor and technical consulting.
               </p>
               <p className="text-slate-200 leading-relaxed">
@@ -88,42 +88,45 @@ export default function Terms() {
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold mb-4 text-white">4. Maintenance & Retainers</h2>
-            
+            <h2 className="text-2xl font-bold mb-4 text-white">4. Services and Monthly Support</h2>
+
             <div className="space-y-6">
               <div className="bg-slate-800/30 border border-indigo-500/20 rounded-xl p-6 backdrop-blur-sm">
-                <h3 className="text-xl font-semibold mb-3 text-indigo-300">4.1 Purpose</h3>
+                <h3 className="text-xl font-semibold mb-3 text-indigo-300">4.1 Missed-Call Text-Back</h3>
                 <p className="text-slate-200 leading-relaxed">
-                  The Tier 1 ($14.99 - $17.99), Tier 2 ($39.00 - $49.99), and Tier 3 ($55.99 - $79.99) pricing plans are 
-                  <strong className="text-white"> service-based retainers</strong> for ongoing technical labor and professional support.
+                  A one-time setup fee of <strong className="text-white">$497</strong> covers building and configuring the system.
+                  Ongoing service is <strong className="text-white">$197 per month</strong>, and the first month is free, so monthly
+                  billing begins in the second month. The service can be cancelled at any time, effective at the end of the current
+                  billing month.
                 </p>
               </div>
 
               <div className="bg-slate-800/30 border border-indigo-500/20 rounded-xl p-6 backdrop-blur-sm">
-                <h3 className="text-xl font-semibold mb-3 text-indigo-300">4.2 Scope</h3>
-                <p className="text-slate-200 leading-relaxed mb-3">
-                  These fees cover ongoing technical labor, including but not limited to:
+                <h3 className="text-xl font-semibold mb-3 text-indigo-300">4.2 Custom Automation</h3>
+                <p className="text-slate-200 leading-relaxed">
+                  Custom projects are quoted at a fixed price before work begins and may be billed in milestones. Optional monthly
+                  support is quoted separately.
                 </p>
+              </div>
+
+              <div className="bg-slate-800/30 border border-indigo-500/20 rounded-xl p-6 backdrop-blur-sm">
+                <h3 className="text-xl font-semibold mb-3 text-indigo-300">4.3 What Monthly Service Covers</h3>
                 <ul className="list-disc list-inside text-slate-200 space-y-2 ml-4">
-                  <li>Monitoring for API changes and deprecations</li>
-                  <li>Applying security patches to custom scripts and workflows</li>
-                  <li>Ensuring continuous workflow stability and uptime</li>
-                  <li>Troubleshooting integration failures and errors</li>
-                  <li>Updating authentication credentials and access tokens</li>
-                  <li>Performance optimization and efficiency improvements</li>
+                  <li>Monitoring the system and fixing failures</li>
+                  <li>Keeping integrations working when third-party APIs change</li>
+                  <li>Updating credentials and access tokens</li>
+                  <li>Small changes, such as message wording, alert recipients or follow-up timing</li>
                 </ul>
+                <p className="text-slate-200 leading-relaxed mt-3">
+                  Larger new features are quoted separately.
+                </p>
               </div>
 
               <div className="bg-slate-800/30 border border-indigo-500/20 rounded-xl p-6 backdrop-blur-sm">
-                <h3 className="text-xl font-semibold mb-3 text-indigo-300">4.3 Delivery</h3>
+                <h3 className="text-xl font-semibold mb-3 text-indigo-300">4.4 Third-Party Costs</h3>
                 <p className="text-slate-200 leading-relaxed">
-                  Maintenance services are active for the duration of the selected term (1 month, 3 months, or 12 months) and 
-                  involve <strong className="text-white">human-led technical oversight</strong>. Our team actively monitors your 
-                  automation systems and proactively addresses issues before they impact operations.
-                </p>
-                <p className="text-slate-200 leading-relaxed mt-3">
-                  This is not passive software maintenance or automated monitoring—each retainer includes dedicated engineering 
-                  time allocated to reviewing, testing, and maintaining your specific automation implementations.
+                  Phone line and messaging costs, and any other third-party subscriptions the system relies on, are paid by the Client
+                  directly to those providers and are not included in Automat's fees.
                 </p>
               </div>
             </div>
@@ -132,9 +135,9 @@ export default function Terms() {
           <section>
             <h2 className="text-2xl font-bold mb-4 text-white">5. Payment Terms</h2>
             <p className="text-slate-200 leading-relaxed">
-              All fees are payable in advance for the subscription period selected. Payments are processed securely 
-              through our payment provider. You authorize us to charge your selected payment method at the beginning 
-              of each subscription term.
+              The setup fee is payable before work begins. Monthly fees are payable in advance at the start of each
+              billing month, starting in the second month. Custom project fees are payable as set out in the quote.
+              Refunds are handled according to our <Link href="/refund" className="text-indigo-400 hover:text-indigo-300">Refund Policy</Link>.
             </p>
           </section>
 
