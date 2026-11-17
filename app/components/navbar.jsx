@@ -23,18 +23,19 @@ export default function Navbar() {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            <a href="/#services" className="text-slate-300 hover:text-white transition-colors">Services</a>
-            <a href="/#process" className="text-slate-300 hover:text-white transition-colors">Process</a>
-            <Link href="/case-studies" className="text-slate-300 hover:text-white transition-colors">Projects</Link>
+            <a href="/#how" className="text-slate-300 hover:text-white transition-colors">How it works</a>
+            <Link href="/med-spa" className="text-slate-300 hover:text-white transition-colors">Med spas</Link>
             <a href="/#pricing" className="text-slate-300 hover:text-white transition-colors">Pricing</a>
-            <a href="/#web-design" className="text-emerald-400 hover:text-emerald-300 transition-colors font-medium">Websites</a>
-            <Link href="/contact" className="px-6 py-2.5 bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 rounded-lg font-medium transition-all shadow-lg shadow-indigo-500/30">
-              Contact
-            </Link>
+            <a href="/#faq" className="text-slate-300 hover:text-white transition-colors">FAQ</a>
+            <Link href="/about" className="text-slate-300 hover:text-white transition-colors">About</Link>
+            <a href="/book/nav" className="px-6 py-2.5 bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 rounded-lg font-medium transition-all shadow-lg shadow-indigo-500/30">
+              Book a call
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
           <button
+            aria-label="Menu"
             className="md:hidden text-white"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           >
@@ -46,14 +47,14 @@ export default function Navbar() {
         {mobileMenuOpen && (
           <div className="md:hidden mt-4 py-4 border-t border-indigo-500/20">
             <div className="flex flex-col space-y-4">
-              <a href="/#services" className="text-slate-300 hover:text-white transition-colors">Services</a>
-              <a href="/#process" className="text-slate-300 hover:text-white transition-colors">Process</a>
-              <Link href="/case-studies" className="text-slate-300 hover:text-white transition-colors">Projects</Link>
-              <a href="/#pricing" className="text-slate-300 hover:text-white transition-colors">Pricing</a>
-              <a href="/#web-design" className="text-emerald-400 hover:text-emerald-300 transition-colors font-medium">Websites</a>
-              <Link href="/contact" className="px-6 py-2.5 bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 rounded-lg font-medium transition-all text-center shadow-lg shadow-indigo-500/30">
-                Contact
-              </Link>
+              <a href="/#how" onClick={() => setMobileMenuOpen(false)} className="text-slate-300 hover:text-white transition-colors">How it works</a>
+              <Link href="/med-spa" onClick={() => setMobileMenuOpen(false)} className="text-slate-300 hover:text-white transition-colors">Med spas</Link>
+              <a href="/#pricing" onClick={() => setMobileMenuOpen(false)} className="text-slate-300 hover:text-white transition-colors">Pricing</a>
+              <a href="/#faq" onClick={() => setMobileMenuOpen(false)} className="text-slate-300 hover:text-white transition-colors">FAQ</a>
+              <Link href="/about" onClick={() => setMobileMenuOpen(false)} className="text-slate-300 hover:text-white transition-colors">About</Link>
+              <a href="/book/nav-mobile" className="px-6 py-2.5 bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 rounded-lg font-medium transition-all text-center shadow-lg shadow-indigo-500/30">
+                Book a call
+              </a>
             </div>
           </div>
         )}

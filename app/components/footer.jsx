@@ -68,13 +68,13 @@ export default function Footer() {
         <h4 className="font-semibold mb-4 text-sm">Services</h4>
         <ul className="space-y-2 text-slate-400 text-sm">
           <li>
-            <a href="#services" className="hover:text-white transition-colors">Custom Integrations</a>
+            <Link href="/med-spa" className="hover:text-white transition-colors">Med spa text-back</Link>
           </li>
           <li>
-            <a href="#services" className="hover:text-white transition-colors">Workflow Design</a>
+            <Link href="/website-brief" className="hover:text-white transition-colors">Websites</Link>
           </li>
           <li>
-            <Link href="/case-studies" className="hover:text-white transition-colors">Projects</Link>
+            <Link href="/about" className="hover:text-white transition-colors">About us</Link>
           </li>
         </ul>
       </div>

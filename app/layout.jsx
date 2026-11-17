@@ -5,11 +5,11 @@ import { Analytics } from '@vercel/analytics/next'
 
 export const metadata = {
   title: {
-    default: 'Automat | Automation for Home-Service & Trades Businesses',
-    template: '%s | Automat',
+    default: 'AutomatHub | Missed-Call Text-Back for Local Businesses',
+    template: '%s | AutomatHub',
   },
-  description: 'Automations for home-service and trades businesses: instant lead replies, quote follow-ups, booking reminders and review requests. Built and maintained by Mehdi Elyoussoufi.',
-  keywords: 'automation for trades, home service business automation, missed call text back, review request automation, contractor lead follow-up, workflow automation, API engineering, Python automation, n8n workflows, Zapier integration, custom integrations, technical consulting, automation maintenance, API monitoring, small business automation, n8n consultant',
+  description: 'Every missed call gets a text back within seconds, from your own number. For med spas, clinics and home-service businesses. Built and maintained by Mehdi Elyoussoufi.',
+  keywords: 'missed call text back for med spas, med spa automation, automation for trades, home service business automation, missed call text back, review request automation, contractor lead follow-up, workflow automation, API engineering, Python automation, n8n workflows, Zapier integration, custom integrations, technical consulting, automation maintenance, API monitoring, small business automation, n8n consultant',
   authors: [{ name: 'Mehdi Elyoussoufi', url: 'https://linkedin.com/in/elyoussoufimehdi' }],
   creator: 'Automat',
   publisher: 'Automat',
@@ -28,8 +28,8 @@ export const metadata = {
   },
   metadataBase: new URL('https://automathub.com'), // Replace with your actual domain
   openGraph: {
-    title: 'Automat | More Booked Jobs, Less Admin',
-    description: 'Automations for plumbers, electricians, HVAC, roofers and cleaners: every lead answered, every quote followed up.',
+    title: 'AutomatHub | Every Missed Call Gets a Text Back',
+    description: 'Missed callers get a text with your booking link within seconds, so they book with you instead of a competitor.',
     url: 'https://automathub.com', // Replace with your actual domain
     siteName: 'Automat',
     locale: 'en_US',
@@ -37,8 +37,8 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Automat | More Booked Jobs, Less Admin',
-    description: 'Automations for home-service businesses: every lead answered, every quote followed up.',
+    title: 'AutomatHub | Every Missed Call Gets a Text Back',
+    description: 'Missed callers get a text with your booking link within seconds, so they book with you instead of a competitor.',
   },
   robots: {
     index: true,
