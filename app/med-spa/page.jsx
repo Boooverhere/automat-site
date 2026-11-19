@@ -1,6 +1,6 @@
 import { CheckCircle2, XCircle, Clock, Repeat, Smartphone, ShieldCheck } from 'lucide-react';
 import {
-  BookButton, btnSecondary, SectionTitle, PhoneMock, HowItWorks, Pricing, Faq, FounderStrip, FinalCta,
+  BookButton, btnSecondary, SectionTitle, PhoneMock, HowItWorks, Offer, Faq, FounderStrip, FinalCta,
 } from '../components/landing';
 import MissedCallCalculator from '../components/missed-call-calculator';
 
@@ -116,7 +116,7 @@ export default function MedSpaPage() {
       {/* Rebooking */}
       <section className="py-20 px-6">
         <div className="container mx-auto max-w-6xl grid md:grid-cols-3 gap-6">
-          <div className="md:col-span-3"><SectionTitle eyebrow="Optional add-on, same price" title="Fill empty spots with clients you already have" /></div>
+          <div className="md:col-span-3"><SectionTitle eyebrow="Optional add-on" title="Fill empty spots with clients you already have" /></div>
           {[
             [Repeat, 'Rebooking reminders', 'Botox wears off after 3–4 months. Clients get a friendly text when they are due, with your booking link.'],
             [Clock, 'Fills quiet days', 'Reminders go out ahead of slow weeks, so your calendar fills without spending more on ads.'],
@@ -131,11 +131,11 @@ export default function MedSpaPage() {
         </div>
       </section>
 
-      {/* Pricing */}
-      <section id="pricing" className="py-20 px-6 border-y border-indigo-500/10 bg-slate-900/30 scroll-mt-24">
+      {/* Offer */}
+      <section id="offer" className="py-20 px-6 border-y border-indigo-500/10 bg-slate-900/30 scroll-mt-24">
         <div className="container mx-auto max-w-5xl">
-          <SectionTitle center eyebrow="Pricing" title="Simple, flat pricing" sub="One recovered client usually pays for months of service." />
-          <Pricing id="medspa-pricing" audience="For med spas & aesthetic clinics" features={features} />
+          <SectionTitle center eyebrow="The offer" title="Everything done for you" sub="Your front desk keeps doing what it does. We make sure no caller slips away." />
+          <Offer id="medspa-offer" audience="For med spas & aesthetic clinics" features={features} />
           <p className="flex items-center justify-center gap-2 text-sm text-slate-400 mt-6">
             <ShieldCheck className="w-4 h-4 text-green-400" /> No contract. Cancel anytime. You own everything we set up.
           </p>

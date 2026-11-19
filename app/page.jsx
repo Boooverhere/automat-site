@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { CheckCircle2, ArrowRight, Sparkles, Wrench, Globe } from 'lucide-react';
 import {
-  BookButton, btnSecondary, SectionTitle, PhoneMock, HowItWorks, Pricing, Faq, FounderStrip, FinalCta,
+  BookButton, btnSecondary, SectionTitle, PhoneMock, HowItWorks, Offer, Faq, FounderStrip, FinalCta,
 } from './components/landing';
 
 export const metadata = {
@@ -19,17 +19,13 @@ const jsonLd = {
   logo: 'https://automathub.com/AutomatHub-logo.svg',
   description: 'Missed-call text-back and follow-up automation for med spas, clinics and home-service businesses.',
   email: 'hello@automathub.com',
-  priceRange: '$197 - $497',
   founder: { '@type': 'Person', name: 'Mehdi Elyoussoufi' },
   hasOfferCatalog: {
     '@type': 'OfferCatalog',
     name: 'Automation Services',
     itemListElement: [
-      { '@type': 'Offer', name: 'Missed-Call Text-Back: setup', price: '497.00', priceCurrency: 'USD',
-        description: 'One-time setup of instant text-back for missed calls, lead logging, owner alerts and automatic follow-up.' },
-      { '@type': 'Offer', name: 'Missed-Call Text-Back: monthly service', price: '197.00', priceCurrency: 'USD',
-        description: 'Monitoring, fixes and changes. First month free.',
-        priceSpecification: { '@type': 'UnitPriceSpecification', price: '197.00', priceCurrency: 'USD', unitText: 'MONTH' } },
+      { '@type': 'Offer', name: 'Missed-Call Text-Back',
+        description: 'Instant text-back for missed calls, lead logging, owner alerts and automatic follow-up, set up and monitored for you. First month free.' },
     ],
   },
 };
@@ -56,7 +52,7 @@ const faqs = [
   ['Do I need a new phone number?', 'No. You keep your number. Missed calls trigger a text from a line linked to your business, and nothing changes for you or your callers except fewer lost leads.'],
   ['Does it work with my software?', 'Yes. The text includes your existing booking link or simply asks what the caller needs, so it works with any booking or job software (Boulevard, Vagaro, Jobber, Housecall Pro and others).'],
   ['How long does setup take?', 'Usually under a week. After a short call we build it, test it together with a real call to your number, and then it runs on its own.'],
-  ['What does it cost?', '$497 one-time setup, then $197/month for monitoring and changes, with the first month free. Phone line costs ($5–10/month) are billed by the phone provider.'],
+  ['How much does it cost?', 'It depends on your setup, like your call volume and booking system. On a short call we look at how you work today and give you a fixed price, and your first month of service is free.'],
   ['What if it does not work for us?', 'Your first month of service is free and you can cancel anytime. You own everything we set up.'],
 ];
 
@@ -128,11 +124,11 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Pricing */}
-      <section id="pricing" className="py-20 px-6 border-y border-indigo-500/10 bg-slate-900/30 scroll-mt-24">
+      {/* Offer */}
+      <section id="offer" className="py-20 px-6 border-y border-indigo-500/10 bg-slate-900/30 scroll-mt-24">
         <div className="container mx-auto max-w-5xl">
-          <SectionTitle center eyebrow="Pricing" title="Simple, flat pricing" sub="One recovered customer usually pays for months of service." />
-          <Pricing id="home-pricing" audience="For appointment & service businesses" features={features} />
+          <SectionTitle center eyebrow="The offer" title="Everything done for you" sub="You don't touch any tech. You just get more of the callers you were already paying to attract." />
+          <Offer id="home-offer" audience="For appointment & service businesses" features={features} />
           <p className="text-center text-sm text-slate-400 mt-6">
             Need something else automated, like quote follow-ups, reminders or review requests?{' '}
             <a href="/book/home-custom" className="text-indigo-300 underline">Get a fixed-price quote</a>.

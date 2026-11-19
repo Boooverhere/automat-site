@@ -585,10 +585,10 @@ export default function CaseStudies() {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link 
-              href="/#pricing"
+              href="/#offer"
               className="px-8 py-4 bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 rounded-lg font-semibold text-lg transition-all shadow-lg shadow-indigo-500/50"
             >
-              See Pricing
+              See the Offer
             </Link>
             <a 
               href="https://calendly.com/automathub/30min"

@@ -73,25 +73,17 @@ export function HowItWorks({ steps }) {
   );
 }
 
-export function Pricing({ id, audience, features }) {
+export function Offer({ id, audience, features }) {
   return (
     <div className="max-w-3xl mx-auto relative p-8 md:p-10 bg-gradient-to-br from-indigo-600/20 to-purple-600/20 border-2 border-indigo-500 rounded-2xl shadow-xl shadow-indigo-500/20">
       <div className="absolute -top-4 left-8">
         <span className="px-4 py-1 bg-gradient-to-r from-indigo-600 to-purple-600 text-white text-xs font-bold rounded-full shadow-lg">FIRST MONTH FREE</span>
       </div>
       <p className="text-xs font-semibold uppercase tracking-widest text-indigo-300 mb-3">{audience}</p>
-      <h3 className="text-3xl font-bold mb-6">Missed-Call Text-Back</h3>
-      <div className="flex flex-wrap items-end gap-x-6 gap-y-2 mb-2">
-        <div className="flex items-end gap-1">
-          <span className="text-5xl font-extrabold">$497</span>
-          <span className="text-slate-300 text-sm mb-2">one-time setup</span>
-        </div>
-        <div className="flex items-end gap-1">
-          <span className="text-3xl font-bold text-slate-200">+ $197</span>
-          <span className="text-slate-300 text-sm mb-1">/month</span>
-        </div>
-      </div>
-      <p className="text-sm text-indigo-200 mb-8">First month of service free. Monthly billing starts in month two. Cancel anytime.</p>
+      <h3 className="text-3xl font-bold mb-3">Missed-Call Text-Back, done for you</h3>
+      <p className="text-slate-200 mb-8">
+        We set it up, test it with you and keep it running. Live in under a week, first month of service free, no contract.
+      </p>
       <ul className="grid sm:grid-cols-2 gap-x-6 gap-y-3 mb-8">
         {features.map((f) => (
           <li key={f} className="flex items-start gap-3">
@@ -101,7 +93,7 @@ export function Pricing({ id, audience, features }) {
         ))}
       </ul>
       <BookButton id={id} className={`${btnPrimary} w-full`} />
-      <p className="text-xs text-slate-400 mt-4 text-center">Phone line costs (usually $5–10/month) are billed directly by the phone provider.</p>
+      <p className="text-xs text-slate-400 mt-4 text-center">Free call. We&apos;ll look at your setup and show you exactly how it would work.</p>
     </div>
   );
 }

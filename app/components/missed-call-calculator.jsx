@@ -35,8 +35,8 @@ export default function MissedCallCalculator({ defaults = { calls: 8, rate: 25, 
         <p className="text-slate-300 mb-2">Revenue walking to competitors each month</p>
         <p className="text-5xl md:text-6xl font-extrabold bg-gradient-to-r from-indigo-300 to-purple-300 bg-clip-text text-transparent">${fmt(lost)}</p>
         <p className="text-slate-400 text-sm mt-3">
-          About {lostClients.toFixed(1)} new clients a month, before counting rebookings. The service costs $197/month; winning back
-          one client usually covers it.
+          About {lostClients.toFixed(1)} new clients a month, before counting rebookings. Win back even a few of them and the
+          service pays for itself.
         </p>
       </div>
     </div>

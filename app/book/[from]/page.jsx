@@ -7,7 +7,7 @@ const CALENDLY = 'https://calendly.com/automathub/30min';
 
 // Every "Book a call" button links to /book/<where-it-was-clicked>.
 // Vercel Web Analytics records that as a page view (works on the Hobby plan),
-// so clicks per button show up under Pages: /book/home-hero, /book/medspa-pricing, ...
+// so clicks per button show up under Pages: /book/home-hero, /book/medspa-offer, ...
 // Then we hand off to Calendly, passing the same label so bookings show their source there too.
 export default function BookRedirect({ params }) {
   const from = String(params.from || 'unknown').slice(0, 60);
