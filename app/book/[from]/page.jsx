@@ -3,7 +3,7 @@
 import { useEffect } from 'react';
 import { track } from '@vercel/analytics';
 
-const CALENDLY = 'https://calendly.com/automathub/30min';
+const CALENDLY = 'https://calendly.com/automathub/15min';
 
 // Every "Book a call" button links to /book/<where-it-was-clicked>.
 // Vercel Web Analytics records that as a page view (works on the Hobby plan),

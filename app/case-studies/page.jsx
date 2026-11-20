@@ -591,7 +591,7 @@ export default function CaseStudies() {
               See the Offer
             </Link>
             <a 
-              href="https://calendly.com/automathub/30min"
+              href="https://calendly.com/automathub/15min"
               className="px-8 py-4 bg-slate-800 hover:bg-slate-700 border border-indigo-500/30 rounded-lg font-semibold text-lg transition-colors"
             >
               Book a Free Audit Call
