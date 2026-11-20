@@ -579,7 +579,7 @@ export default function CaseStudies() {
           <div className="mb-8">
             <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-white to-slate-300 bg-clip-text text-transparent">Want Something Like This for Your Business?</h2>
             <p className="text-xl text-slate-300 leading-relaxed">
-              Book a free 30-minute call and I&apos;ll show you what can be automated in your day-to-day.
+              Book a free 15-minute call and I&apos;ll show you what can be automated in your day-to-day.
             </p>
           </div>
 
