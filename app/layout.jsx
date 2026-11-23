@@ -2,6 +2,7 @@ import './globals.css'
 import Navbar from './components/navbar'
 import Footer from './components/footer'
 import { Analytics } from '@vercel/analytics/next'
+import TawkChat from './components/tawk-chat'
 
 export const metadata = {
   title: {
@@ -86,6 +87,7 @@ export default function RootLayout({ children }) {
         {children}
         <Footer />
         <Analytics />
+        <TawkChat />
       </body>
     </html>
   )
